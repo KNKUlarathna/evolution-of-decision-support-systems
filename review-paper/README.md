@@ -1,36 +1,38 @@
-# DSS evolution review paper
+# Organizational complexity, data growth, and DSS evolution
 
-An unattributed critical narrative review focused on why each major DSS approach emerged: the prior limitation, contribution of computational capacity, architectural change, and unresolved decision requirement.
+**Organizational Complexity, Data Growth, and Decision Support Systems: A Critical Integrative Review of Their Feedback Dynamics**
 
-- [Read the PDF](review.pdf)
-- [Read the editable manuscript](review.md)
-- [LaTeX source](review.tex)
-- [Source evidence matrix](evidence-matrix.md)
+- [Read the 10-page PDF](review.pdf)
+- [Read on GitHub](review.md)
+- [LaTeX manuscript](review.tex)
+- [Assessed-source matrix](evidence-matrix.md)
+- [Claim-to-evidence matrix](claim-evidence.md)
+- [Source manifest and assessed versions](source-manifest.json)
+- [Selection register](selection-register.csv) and [unassessed/excluded candidates](excluded-candidates.json)
+- [Research protocol, search/retrieval logs and detailed extractions](supplement/README.md)
+- [Validation record](validation.md)
 
-The manuscript uses the unmodified IEEEtran conference class, two columns, an abstract and index terms, numbered sections, a comparison table, and numbered references. It is an IEEE-style review draft, not an accepted paper or a claim of compliance with a particular journal’s submission rules. Authorship is intentionally unattributed. It discloses AI assistance and the limits of its narrative review method. The 24 references are purposefully selected; the paper does not claim a new systematic search, experiments, or a comprehensive 2026 survey.
+The manuscript develops a conditional explanation of how organizational information requirements, data growth and DSS arrangements interact. It distinguishes quantity from meaning, theoretical mechanisms from organizational observations, and reinforcing pathways from simplification and stabilization. It includes 24 purposively selected full-text works, five historical configurations, three comparison/evidence tables, an original two-panel mechanism figure and five propositions.
 
-## Build
+It is a critical integrative review, not an exhaustive systematic review or a new empirical test of the complete historical feedback loop. Authorship remains unattributed as requested. The prior six-page draft is preserved in Git history at commit `704c71c`; this version replaces it on the `review-complexity-data-feedback` branch.
 
-Requires Python 3 (for this command wrapper), pdfLaTeX and the standard LaTeX `fontenc`, `cite`, `booktabs`, `array`, and `hyperref` packages. No network access is required after checkout because IEEEtran.cls is included.
+## Build and render
 
-From this directory:
+Requires Python 3, pdfLaTeX with the included IEEEtran class and standard `fontenc`, `inputenc`, `cite`, `booktabs`, `array`, `graphicx`, `tikz` and `hyperref` packages, the `standalone` class, Poppler `pdftoppm`, and Pandoc for Markdown. From this directory:
 
 ```sh
 python3 build.py
-```
-
-Auxiliary files go to a temporary directory. The command runs pdfLaTeX twice, rejects unresolved citations/references and overfull boxes, and copies the completed PDF here. To regenerate the reading copy (requires Pandoc):
-
-```sh
 python3 render_markdown.py
 ```
 
-The PDF is the authoritative formatted artifact; the Markdown is a convenience reading copy.
+The build runs pdfLaTeX twice, rejects unresolved citations/references and overfull boxes, exports the original figure as PDF/PNG/TeX, and keeps auxiliary files temporary. The Markdown renderer preserves numbered references and embeds the figure. No network access is needed to build the checked-out manuscript.
 
-## Template provenance
+## Sources and working library
 
-`IEEEtran.cls` is version 1.8b, retrieved unchanged from the CTAN mirror at https://ctan.math.illinois.edu/macros/latex/contrib/IEEEtran/IEEEtran.cls. Its embedded LaTeX Project Public License notice is retained. The class is not authored by this repository’s owner. No IEEE logo or claim of IEEE endorsement is used.
+New research working copies are stored outside the checkout under `/workspace/dss-research/`; metadata, hashes, provenance and page/section-located extraction are recorded here. Public source links allow readers to locate the assessed versions. New article PDFs are not automatically redistributed with this manuscript. The previously committed `DSS_PDFs/` collection is unchanged by this revision. PDF availability is not treated as evidence that a source is high quality.
 
-## Before submission
+## Format and submission status
 
-The eventual author should review the argument and original sources, provide authorship and affiliations, choose a target venue, check its length and reference rules, and confirm the venue’s current AI disclosure requirements. The draft makes no claim that cited benchmark improvements demonstrate organizational decision quality.
+The manuscript uses IEEEtran **journal** format with two columns, an abstract, index terms, numbered sections and references. It has not been submitted to or accepted by IEEE. A final target venue must determine length, anonymization, disclosure and reference requirements, and human authors must take responsibility for scholarly verification and submission. The paper contains an explicit AI-assistance statement.
+
+The unmodified IEEEtran.cls version 1.8b was obtained from https://ctan.math.illinois.edu/macros/latex/contrib/IEEEtran/IEEEtran.cls; its embedded LaTeX Project Public License notice is retained. The original mechanism figure was generated for this manuscript, rather than reproduced from another paper.

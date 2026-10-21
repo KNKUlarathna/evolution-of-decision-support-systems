@@ -1,0 +1,7 @@
+# Technical mechanism sources
+
+These three sources are included only to explain information-processing mechanisms, not as empirical evidence of DSS adoption periods. Reused from the previously downloaded repository corpus; relevant full-text extracts remain in /tmp/dss-paper-text.
+
+- Dean2004: abstract and Sections2–3 (Programming Model/Implementation), Figure1: map/reduce abstraction hides scheduling, distribution and failure handling; processing more records requires architecture/coordination rather than hardware alone. Section4 discusses locality and execution refinements. Suitable workloads and engineering constraints limit transfer; does not prove historical DSS adoption or optimality for interactive decisions.
+- Lewis2020: abstract and Sections1–2: combines parametric and nonparametric memory; retriever selects evidence for generator, motivated by updating knowledge and provenance. Supports selective information access as mechanism. Evaluated on NLP tasks, not organization-wide complexity or workflow outcomes. The checked arXiv source is identified as such in references rather than asserting a separately checked proceedings version.
+- Yao2023: abstract and Sections1–2 and benchmark/evaluation sections: interleaved actions, observations and language reasoning; action responses update subsequent context. Supports tool/observation loop mechanism. Benchmark results do not establish long-term organizational reliability, governance adequacy or a new historical DSS generation.

@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-21",
+  "draft_word_tokens": 6679,
+  "source_count": 24,
+  "scope": "Abstract and body/tables; bibliography, citation commands and TikZ figure code excluded.",
+  "method": "Unicode/lowercase normalization; punctuation ignored; line-end hyphenation joined; pdf reading-order/layout and available assessed OCR checked.",
+  "limits": "Not a plagiarism score or novelty certificate. Does not detect all paraphrase, translated borrowing, inaccessible literature or extraction omissions.",
+  "results": [
+    {
+      "key": "GALBRAITH1974",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "TUSHMAN1978",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "shim2002",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "power2004",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "perdomo2020",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "amershi2019",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "little1969",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "gorry1971",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "arnott2008",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Budianto2026",
+      "available_text_variants": 2,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Eze2026",
+      "available_text_variants": 2,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "DAFT1986",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "SIMON1971",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "feigenbaum1977",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Sutton2020",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "chaudhuri1997",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "fayyad1996",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Dean2004",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "sculley2015",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Lewis2020",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Yao2023",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "chaney2018",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "ensign2018",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    },
+    {
+      "key": "Greenhalgh2017",
+      "available_text_variants": 3,
+      "matched_draft_words_in_runs_at_least_8": 0,
+      "longest_matches": []
+    }
+  ]
+}

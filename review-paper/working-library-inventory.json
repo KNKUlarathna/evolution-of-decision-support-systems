@@ -1,0 +1,87 @@
+[
+  {
+    "path": "theory/daft1986-full.pdf",
+    "bytes": 2456478,
+    "sha256": "d12eb86cd06a31746c96b9a7f5f6a4dad5e04b2fb785b4e8e7c80292573142ae"
+  },
+  {
+    "path": "theory/simon1971.pdf",
+    "bytes": 1010703,
+    "sha256": "5f40fba7b2fd3b04171d08da43c6086501fa3d9b34e858a68720f741e3f5b7cf"
+  },
+  {
+    "path": "theory/galbraith1974-full.pdf",
+    "bytes": 549240,
+    "sha256": "86f07cf46163c3d402d64e447c5bb36a6d4ad94542c921cfd80ebdcd493cca64"
+  },
+  {
+    "path": "theory/tushman1978-full.pdf",
+    "bytes": 979602,
+    "sha256": "a16054f2bfce0515f86457b64a881bc089b1ee1177356745c73061456063bb94"
+  },
+  {
+    "path": "positioning/DSS065.pdf",
+    "bytes": 328852,
+    "sha256": "ce2e506536c31903f48873c5cae49ebc2ad056df8af519d2c2b981f8455cce8e"
+  },
+  {
+    "path": "positioning/DSS008.pdf",
+    "bytes": 212566,
+    "sha256": "873302141cf03dd5ddd98e9399f67cbecdf92a5176ddefa42449f4478f8457ee"
+  },
+  {
+    "path": "positioning/Eze2026.pdf",
+    "bytes": 513479,
+    "sha256": "f29efe96ac14bd1286ea18d6d13f341656d9e121bce34c14062238599a98f604"
+  },
+  {
+    "path": "positioning/DSS011.pdf",
+    "bytes": 293714,
+    "sha256": "d0c708afbf403c2b94856482b1ec6132b9aa2b28753b6d497718c7415a025e3a"
+  },
+  {
+    "path": "history/gorry1971-full.pdf",
+    "bytes": 1755516,
+    "sha256": "f354035fc7a27fdab4e6d3ad2c524c8b5d88fcc23b8dc023339037f8aaa58a41"
+  },
+  {
+    "path": "history/little1969-full.pdf",
+    "bytes": 1601852,
+    "sha256": "e724387679f948ff38d1b32c8ab57fde1964145caa0c8b7fb2c015ab6442f79c"
+  },
+  {
+    "path": "feedback/perdomo2020.pdf",
+    "bytes": 1187109,
+    "sha256": "66c3f74995d6ade7e11554b034d0e33f5a07b877da73b555a26a2cd77b120f9b"
+  },
+  {
+    "path": "feedback/chaney2018.pdf",
+    "bytes": 1595013,
+    "sha256": "3965bdb1e39d274a5342ad6b322727c8904743850b54240ff2eed13077e4e7ae"
+  },
+  {
+    "path": "feedback/sculley2015.pdf",
+    "bytes": 165614,
+    "sha256": "1a67da09a8bd5ba9a3577176e30aa2fbd88534e6baf0bc31522b4999f643d2a1"
+  },
+  {
+    "path": "feedback/amershi2019.pdf",
+    "bytes": 203640,
+    "sha256": "12e057f6a0127b1d517d44b1d9397779b91f1125a02b4abeebd2a3a4f3856c14"
+  },
+  {
+    "path": "feedback/ensign2018.pdf",
+    "bytes": 1095794,
+    "sha256": "e847d0f500cabae7d5f6562900aa4f627d71dd83a4c0689fccd1666d18a862cf"
+  },
+  {
+    "path": "integration/Sutton2020.pdf",
+    "bytes": 796254,
+    "sha256": "6d9fdecb85b5f83852cfa083e2a88017f2bab3844235196a4d558d5aa12d7032"
+  },
+  {
+    "path": "integration/Greenhalgh2017.pdf",
+    "bytes": 1246189,
+    "sha256": "5ac0f1aa13b9f15238b8c29675fb85a3a5512d4b56df6c99d2929de8c66044d8"
+  }
+]

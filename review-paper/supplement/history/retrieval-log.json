@@ -1,0 +1,129 @@
+[
+  {
+    "key": "little1970",
+    "url": "https://dspace.mit.edu/bitstreams/8d15b2ee-3ddb-4c9b-b0cb-b7798ab976bd/download",
+    "status": "failed",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "gorry1971",
+    "url": "https://dspace.mit.edu/bitstream/handle/1721.1/47936/frameworkformana00gorr.pdf",
+    "status": "failed",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "sprague1980",
+    "url": "https://aisel.aisnet.org/misq/vol4/iss4/1/",
+    "final_url": "https://aisel.aisnet.org/misq/vol4/iss4/1/",
+    "status": "retrieved",
+    "bytes": 48392,
+    "file": "/workspace/dss-research/history/sprague1980.html"
+  },
+  {
+    "key": "chen2012",
+    "url": "https://eller.arizona.edu/sites/default/files/chen_bi_2012.pdf",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "chen2012-alt",
+    "url": "https://www.jstor.org/stable/pdf/41703503.pdf",
+    "final_url": "https://www.jstor.org/stable/pdf/41703503.pdf",
+    "status": "retrieved",
+    "bytes": 3038,
+    "file": "/workspace/dss-research/history/chen2012-alt.html"
+  },
+  {
+    "key": "group1987",
+    "url": "https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.33.5.589",
+    "final_url": "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.33.5.589?journalCode=mnsc&cookieSet=1",
+    "status": "retrieved",
+    "bytes": 633610,
+    "file": "/workspace/dss-research/history/group1987.html"
+  },
+  {
+    "key": "arnott2005",
+    "url": "https://journals.sagepub.com/doi/pdf/10.1057/palgrave.jit.2000035",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "power2007",
+    "url": "https://api.crossref.org/works/10.1016/j.dss.2005.05.030",
+    "final_url": "https://api.crossref.org/works/10.1016/j.dss.2005.05.030",
+    "status": "retrieved",
+    "bytes": 24581,
+    "file": "/workspace/dss-research/history/power2007.json"
+  },
+  {
+    "key": "sprague1980-full",
+    "url": "https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1878&context=misq",
+    "final_url": "https://aisel.aisnet.org/cgi/login.cgi?return_to=https%3A%2F%2Faisel.aisnet.org%2Fcgi%2Fviewcontent.cgi%3Farticle%3D1878%26context%3Dmisq&situation=subscription&context=misq&article=1878",
+    "status": "retrieved",
+    "file": "/workspace/dss-research/history/sprague1980-full.html",
+    "bytes": 46472
+  },
+  {
+    "key": "chen2012-full",
+    "url": "https://misq.umn.edu/misq/article-pdf/36/4/1165/5436/8_si_chenintroduction.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "arnott2004-full",
+    "url": "https://link.springer.com/content/pdf/10.1057/palgrave.ejis.3000509.pdf",
+    "final_url": "https://link.springer.com/article/10.1057/palgrave.ejis.3000509?error=cookies_not_supported&code=228b6464-2b92-4a53-ae79-6b7113bd1d75",
+    "status": "retrieved",
+    "file": "/workspace/dss-research/history/arnott2004-full.html",
+    "bytes": 308248
+  },
+  {
+    "key": "power2007-page",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0167923605001739",
+    "status": "failed",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "key": "continental-author",
+    "url": "https://www.terry.uga.edu/~hwatson/Real%20Time%20BI%20at%20Continental.pdf",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "gorry-working-paper",
+    "url": "https://archive.org/download/frameworkformana00gorr/frameworkformana00gorr.pdf",
+    "final_url": "https://dn720703.ca.archive.org/0/items/frameworkformana00gorr/frameworkformana00gorr.pdf",
+    "status": "retrieved_pdf",
+    "bytes": 1755516
+  },
+  {
+    "key": "little1969-working-paper",
+    "url": "https://archive.org/download/modelsmanagersco00litt/modelsmanagersco00litt.pdf",
+    "final_url": "https://dn790007.ca.archive.org/0/items/modelsmanagersco00litt/modelsmanagersco00litt.pdf",
+    "status": "retrieved_pdf",
+    "bytes": 1601852
+  },
+  {
+    "key": "chaudhuri1997-metadata",
+    "url": "https://api.crossref.org/works/10.1145/248603.248616",
+    "status": "verified DOI title volume issue pages",
+    "raw_file": "chaudhuri1997-metadata.json"
+  },
+  {
+    "key": "shim2002-metadata",
+    "url": "https://api.crossref.org/works/10.1016/S0167-9236(01)00139-7",
+    "status": "verified DOI title volume issue pages",
+    "raw_file": "shim2002-metadata.json"
+  },
+  {
+    "key": "fayyad1996-metadata",
+    "url": "https://api.crossref.org/works/10.1609/aimag.v17i3.1230",
+    "status": "404; followed up publisher metadata rather than deleting DOI"
+  },
+  {
+    "key": "fayyad1996-publisher",
+    "url": "https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230",
+    "status": "verified citation_title and citation_doi",
+    "raw_file": "fayyad1996-publisher.html"
+  }
+]

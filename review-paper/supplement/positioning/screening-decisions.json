@@ -1,0 +1,32 @@
+[
+  {
+    "key": "Budianto2026",
+    "access_status": "full_text",
+    "decision": "include for prior-review comparison; do not adopt causal effects or screened-study counts as independently verified"
+  },
+  {
+    "key": "Eze2026",
+    "access_status": "full_text",
+    "decision": "include for scope/architecture/organizational-context comparison; no use of unexplained cross-category numerical metrics"
+  },
+  {
+    "key": "Shim2002",
+    "access_status": "full_text",
+    "decision": "include for historical mechanisms and strongest boundary on novelty"
+  },
+  {
+    "key": "ArnottPervan2008",
+    "access_status": "full_text",
+    "decision": "include for theory/practice gap and evidence appraisal; 1990\u20132004 research sample does not describe current adoption"
+  },
+  {
+    "key": "LourdusamyMattam2021",
+    "access_status": "abstract",
+    "decision": "optional background only; do not use as full-text-assessed synthesis evidence"
+  },
+  {
+    "key": "EpplerMengis2004",
+    "access_status": "metadata",
+    "decision": "exclude from substantive extraction because accessible full text not obtained; do not invent findings"
+  }
+]

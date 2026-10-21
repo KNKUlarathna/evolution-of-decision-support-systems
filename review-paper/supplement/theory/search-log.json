@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-21",
+  "method": "targeted theory-led source discovery, not systematic database search",
+  "queries": [
+    {
+      "query": "Organization Design An Information Processing View Galbraith",
+      "service": "Crossref works title search",
+      "result": "HTTP429; no items used"
+    },
+    {
+      "query": "Information Processing as an Integrating Concept in Organizational Design Tushman Nadler",
+      "service": "Crossref works title search",
+      "result": "identified10.2307/257550 and AOM DOI link"
+    },
+    {
+      "query": "Organizational Information Requirements Media Richness and Structural Design Daft Lengel",
+      "service": "Crossref works title search",
+      "result": "identified10.1287/mnsc.32.5.554"
+    },
+    {
+      "query": "Management Misinformation Systems Ackoff",
+      "service": "Crossref works title search",
+      "result": "several reprints returned; selected original1967 ManagementScience DOI10.1287/mnsc.14.4.B147"
+    },
+    {
+      "query": "Designing Organizations for an Information Rich World Simon",
+      "service": "Crossref works title search",
+      "result": "HTTP429; used known scholarly mirror, metadata identifies CMU archive"
+    },
+    {
+      "query": "The Social Life of Information Brown Duguid",
+      "service": "Crossref works title search",
+      "result": "HTTP429; excluded to keep scope focused"
+    },
+    {
+      "query": "Galbraith 1974 information processing view pdf",
+      "service": "DuckDuckGo HTML",
+      "result": "author-owned site PDF located; full_text included"
+    },
+    {
+      "query": "Daft Lengel 1986 organizational information requirements pdf",
+      "service": "DuckDuckGo HTML",
+      "result": "University of Utah course PDF located; full_text included"
+    },
+    {
+      "query": "Tushman Nadler 1978 information processing pdf",
+      "service": "DuckDuckGo HTML",
+      "result": "author-profile ResearchGate PDF located; full_text included"
+    },
+    {
+      "query": "Ackoff Management Misinformation Systems pdf",
+      "service": "DuckDuckGo HTML",
+      "result": "publisher abstract and third-party document sites; no fully assessed article obtained; abstract-only reserve"
+    },
+    {
+      "query": "five paper DOI records",
+      "service": "OpenAlex DOI lookup",
+      "result": "metadata/abstracts corroborated; three primary theoretical full-texts subsequently obtained through search. Metadata itself did not establish full-text access."
+    },
+    {
+      "query": "five title PDF searches",
+      "service": "Bing RSS",
+      "result": "irrelevant dictionary results; discarded; raw XML retained"
+    }
+  ],
+  "selection": "Four seminal theory sources chosen for distinct links/boundaries; Ackoff held abstract-only; Eppler overload review delegated to positioning agent.",
+  "download_logs": [
+    "download-log.json",
+    "download-log2.json",
+    "download-log3.json",
+    "download-log4.json"
+  ],
+  "failures": "Publisher subscription abstracts/403,404 guessed author paths, CMU503, and unrelated ResearchGate redirect were not counted as full texts."
+}

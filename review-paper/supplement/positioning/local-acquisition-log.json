@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-10-21",
+    "kind": "reuse_of_existing_download",
+    "key": "Budianto2026",
+    "source": "/workspace/dss-originality-check/DSS065.pdf",
+    "output": "/workspace/dss-research/positioning/DSS065.pdf",
+    "action": "copied existing PDF and extracted pdftotext -layout; no new network download"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "reuse_of_existing_download",
+    "key": "Eze2026",
+    "source": "/workspace/dss-originality-check/Eze2026.pdf",
+    "output": "/workspace/dss-research/positioning/Eze2026.pdf",
+    "action": "copied existing PDF and extracted pdftotext -layout; no new network download"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "reuse_of_existing_download",
+    "key": "Shim2002",
+    "source": "existing repository DSS_PDFs/DSS008*.pdf",
+    "output": "/workspace/dss-research/positioning/DSS008.pdf",
+    "action": "copied existing PDF and extracted pdftotext -layout; no new network download"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "reuse_of_existing_download",
+    "key": "ArnottPervan2008",
+    "source": "existing repository DSS_PDFs/DSS011*.pdf",
+    "output": "/workspace/dss-research/positioning/DSS011.pdf",
+    "action": "copied existing PDF and extracted pdftotext -layout; no new network download"
+  }
+]

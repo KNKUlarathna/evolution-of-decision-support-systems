@@ -1,0 +1,28 @@
+[
+  {
+    "file": "Beede2020.pdf",
+    "url": "https://dl.acm.org/doi/pdf/10.1145/3313831.3376718",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Beede2020-full.html",
+    "url": "https://dl.acm.org/doi/full/10.1145/3313831.3376718",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "Sutton2020.pdf",
+    "url": "https://www.nature.com/articles/s41746-020-0221-y.pdf",
+    "status": "downloaded",
+    "bytes": 796254,
+    "is_pdf": true
+  },
+  {
+    "file": "Greenhalgh2017.pdf",
+    "url": "https://www.jmir.org/2017/11/e367/PDF",
+    "status": "downloaded",
+    "bytes": 1246189,
+    "is_pdf": true
+  }
+]

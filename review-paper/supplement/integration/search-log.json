@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-21",
+  "queries": [
+    {
+      "query": "decision support organizational complexity information processing data volume feedback",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=decision%20support%20organizational%20complexity%20information%20processing%20data%20volume%20feedback",
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "query": "data driven decision making organizational performance Brynjolfsson Hitt Kim strength numbers",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=data%20driven%20decision%20making%20organizational%20performance%20Brynjolfsson%20Hitt%20Kim%20strength%20numbers",
+      "status": "retrieved",
+      "records": 8,
+      "results": [
+        [
+          [
+            "Strength in Numbers: How Does Data-Driven Decisionmaking Affect Firm Performance?"
+          ],
+          "10.2139/ssrn.1819486"
+        ],
+        [
+          [
+            "Data in Action: Data-Driven Decision Making in U.S. Manufacturing"
+          ],
+          "10.2139/ssrn.2722502"
+        ],
+        [
+          [
+            "Organizational Readiness for Data-Driven Decision-making"
+          ],
+          "10.4135/9781036232351.n7"
+        ],
+        [
+          [
+            "Information Technology, Organizational Transformation, and Business Performance"
+          ],
+          "10.7551/mitpress/5609.003.0007"
+        ],
+        [
+          [
+            "Data in Action: Data-Driven Decision Making and Predictive Analytics in U.S. Manufacturing"
+          ],
+          "10.2139/ssrn.3422397"
+        ],
+        [
+          [
+            "Data-Driven Decision Making and Business Performance: Econometric Evidence on Organizational Heterogeneity, Analytics Complementarity, and Endogeneity"
+          ],
+          "10.2139/ssrn.7387422"
+        ],
+        [
+          [
+            "The Rapid Adoption of Data-Driven Decision-Making"
+          ],
+          "10.1257/aer.p20161016"
+        ],
+        [
+          [
+            "Beyond Computation: Information Technology, Organizational Transformation and Business Performance"
+          ],
+          "10.1257/jep.14.4.23"
+        ]
+      ]
+    },
+    {
+      "query": "clinical decision support systems benefits risks strategies success Sutton",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=clinical%20decision%20support%20systems%20benefits%20risks%20strategies%20success%20Sutton",
+      "status": "retrieved",
+      "records": 8,
+      "results": [
+        [
+          [
+            "An overview of clinical decision support systems: benefits, risks, and strategies for success"
+          ],
+          "10.1038/s41746-020-0221-y"
+        ],
+        [
+          [
+            "Impacts and Risks of Adopting Clinical Decision Support Systems"
+          ],
+          "10.5772/16265"
+        ],
+        [
+          [
+            "Operational risks, bidding strategies and information policies in restructured power markets"
+          ],
+          "10.1016/s0167-9236(98)00081-5"
+        ],
+        [
+          [
+            "Benefits and Risks of Machine Learning Decision Support Systems"
+          ],
+          "10.1001/jama.2017.16611"
+        ],
+        [
+          [
+            "Benefits and Risks of Machine Learning Decision Support Systems"
+          ],
+          "10.1001/jama.2017.16619"
+        ],
+        [
+          [
+            "Benefits and Risks of Machine Learning Decision Support Systems"
+          ],
+          "10.1001/jama.2017.16615"
+        ],
+        [
+          [
+            "Benefits and Risks of Machine Learning Decision Support Systems"
+          ],
+          "10.1001/jama.2017.16627"
+        ],
+        [
+          [
+            "Clinical Decision Support: Strategies for Success"
+          ],
+          "10.1016/j.procs.2014.08.063"
+        ]
+      ]
+    },
+    {
+      "query": "Beyond Adoption Nonadoption Abandonment Scale-up Spread Sustainability Greenhalgh",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=Beyond%20Adoption%20Nonadoption%20Abandonment%20Scale-up%20Spread%20Sustainability%20Greenhalgh",
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "query": "human centered evaluation deep learning system deployed clinics healthcare Beede",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=human%20centered%20evaluation%20deep%20learning%20system%20deployed%20clinics%20healthcare%20Beede",
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "query": "big data analytics capability organizational performance dynamic capabilities review",
+      "endpoint": "https://api.crossref.org/works?rows=8&query.bibliographic=big%20data%20analytics%20capability%20organizational%20performance%20dynamic%20capabilities%20review",
+      "status": "failed",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ]
+}

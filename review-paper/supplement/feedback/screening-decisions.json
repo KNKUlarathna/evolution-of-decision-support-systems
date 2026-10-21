@@ -1,0 +1,41 @@
+{
+  "included": [
+    "perdomo2020",
+    "chaney2018",
+    "ensign2018",
+    "sculley2015",
+    "amershi2019"
+  ],
+  "not_assessed_candidates": [
+    {
+      "key": "raisch2021",
+      "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
+      "authors": [
+        "Sebastian Raisch",
+        "Sebastian Krakowski"
+      ],
+      "year": 2021,
+      "venue": "Academy of Management Review",
+      "volume": "46",
+      "issue": "1",
+      "pages": "192–210",
+      "doi": "10.5465/amr.2018.0072",
+      "access": "metadata_only",
+      "decision": "Excluded from assessed full-text corpus: publisher full text returned HTTP 403. Bibliographic candidate useful for later follow-up, not evidence extracted. An early online/alias record exists with DOI 10.5465/2018.0072; the canonical 2021 record was checked separately."
+    },
+    {
+      "key": "faraj2018",
+      "title": "Working and organizing in the age of the learning algorithm",
+      "authors": [
+        "Samer Faraj",
+        "Stella Pachidi",
+        "Karla Sayegh"
+      ],
+      "year": 2018,
+      "venue": "Information and Organization",
+      "doi": "10.1016/j.infoandorg.2018.02.005",
+      "access": "metadata_only",
+      "decision": "Not pursued further in this bounded task after locating an OA repository candidate; do not count as assessed full text. Repository candidate: https://www.repository.cam.ac.uk/handle/1810/276663"
+    }
+  ]
+}

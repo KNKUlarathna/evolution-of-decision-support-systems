@@ -1,0 +1,30 @@
+[
+  {
+    "file": "Sutton2020.html",
+    "url": "https://www.nature.com/articles/s41746-020-0221-y",
+    "bytes": 520562,
+    "status": "downloaded",
+    "is_pdf": false
+  },
+  {
+    "file": "Greenhalgh2017.html",
+    "url": "https://www.jmir.org/2017/11/e367/",
+    "bytes": 658423,
+    "status": "downloaded",
+    "is_pdf": false
+  },
+  {
+    "file": "Beede2020.html",
+    "url": "https://research.google/pubs/a-human-centered-evaluation-of-a-deep-learning-system-deployed-in-clinics-for-the-detection-of-diabetic-retinopathy/",
+    "bytes": 147130,
+    "status": "downloaded",
+    "is_pdf": false
+  },
+  {
+    "file": "Brynjolfsson2016.pdf",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.p20161016",
+    "bytes": 30078,
+    "status": "downloaded",
+    "is_pdf": false
+  }
+]

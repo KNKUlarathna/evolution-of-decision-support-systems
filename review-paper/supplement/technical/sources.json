@@ -1,0 +1,74 @@
+[
+  {
+    "key": "Dean2004",
+    "title": "MapReduce: Simplified Data Processing on Large Clusters",
+    "authors": [
+      "Jeffrey Dean",
+      "Sanjay Ghemawat"
+    ],
+    "year": 2004,
+    "venue": "Proceedings of the 6th Symposium on Operating Systems Design and Implementation",
+    "doi": null,
+    "url": "https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/",
+    "access_status": "full_text",
+    "file_path": "/workspace/evolution-of-decision-support-systems/DSS_PDFs/04_Data_and_web_DSS/DSS034_2004_MapReduce_Simplified_Data_Processing_on_Large_Clusters.pdf",
+    "text_path": "/tmp/dss-paper-text/DSS034.txt",
+    "provenance_url": "https://research.google.com/archive/mapreduce-osdi04.pdf",
+    "license": null,
+    "source_type": "technical mechanism study, not organizational adoption evidence",
+    "include_recommendation": true
+  },
+  {
+    "key": "Lewis2020",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandra Piktus",
+      "Fabio Petroni",
+      "Vladimir Karpukhin",
+      "Naman Goyal",
+      "Heinrich Küttler",
+      "Mike Lewis",
+      "Wen-tau Yih",
+      "Tim Rocktäschel",
+      "Sebastian Riedel",
+      "Douwe Kiela"
+    ],
+    "year": 2020,
+    "venue": "arXiv:2005.11401",
+    "doi": null,
+    "url": "https://arxiv.org/abs/2005.11401",
+    "access_status": "full_text",
+    "file_path": "/workspace/evolution-of-decision-support-systems/DSS_PDFs/06_LLM_and_agents/DSS045_2020_Retrieval-Augmented_Generation_for_Knowledge-Intensive_NLP_Tasks.pdf",
+    "text_path": "/tmp/dss-paper-text/DSS045.txt",
+    "provenance_url": "https://arxiv.org/pdf/2005.11401",
+    "license": null,
+    "source_type": "technical mechanism study, not organizational adoption evidence",
+    "include_recommendation": true
+  },
+  {
+    "key": "Yao2023",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "authors": [
+      "Shunyu Yao",
+      "Jeffrey Zhao",
+      "Dian Yu",
+      "Nan Du",
+      "Izhak Shafran",
+      "Karthik Narasimhan",
+      "Yuan Cao"
+    ],
+    "year": 2023,
+    "venue": "Proceedings of the International Conference on Learning Representations",
+    "doi": null,
+    "url": "https://arxiv.org/abs/2210.03629",
+    "access_status": "full_text",
+    "file_path": "/workspace/evolution-of-decision-support-systems/DSS_PDFs/06_LLM_and_agents/DSS047_2023_ReAct_Synergizing_Reasoning_and_Acting_in_Language_Models.pdf",
+    "text_path": "/tmp/dss-paper-text/DSS047.txt",
+    "provenance_url": "https://arxiv.org/pdf/2210.03629",
+    "license": null,
+    "source_type": "technical mechanism study, not organizational adoption evidence",
+    "include_recommendation": true
+  }
+]

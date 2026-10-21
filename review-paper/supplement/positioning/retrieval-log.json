@@ -1,0 +1,56 @@
+[
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://api.crossref.org/works/10.1080/01972240490507974",
+    "key": "eppler-meta",
+    "bytes": 12055,
+    "status": "success",
+    "pdf": false,
+    "content_type": "application/json"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://www.knowledge-communication.org/pdf/eppler-mengis-information-overload.pdf",
+    "key": "eppler-author",
+    "status": "failed",
+    "error": "HTTP Error 522: Unknown"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://www.alexandria.unisg.ch/15380/1/eppler_mengis_2004.pdf",
+    "key": "eppler-usg",
+    "status": "failed",
+    "error": "HTTP Error 405: Method Not Allowed"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://www.tandfonline.com/doi/pdf/10.1080/01972240490507974",
+    "key": "eppler-journal",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://api.crossref.org/works/10.31004/riggs.v5i1.6990",
+    "key": "budianto-meta",
+    "bytes": 4537,
+    "status": "success",
+    "pdf": false,
+    "content_type": "application/json"
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "retrieval",
+    "url": "https://api.crossref.org/works/10.53623/diip.v1i1.1264",
+    "key": "eze-meta",
+    "bytes": 16792,
+    "status": "success",
+    "pdf": false,
+    "content_type": "application/json"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "key": "Sutton2020",
+    "title": "An overview of clinical decision support systems: benefits, risks, and strategies for success",
+    "authors": [
+      "Reed T. Sutton",
+      "David Pincock",
+      "Daniel C. Baumgart",
+      "Daniel C. Sadowski",
+      "Richard N. Fedorak",
+      "Karen I. Kroeker"
+    ],
+    "year": 2020,
+    "venue": "npj Digital Medicine",
+    "volume": "3",
+    "article": "17",
+    "doi": "10.1038/s41746-020-0221-y",
+    "url": "https://www.nature.com/articles/s41746-020-0221-y",
+    "access": "full_text",
+    "filepath": "/workspace/dss-research/integration/Sutton2020.pdf",
+    "text_path": "/workspace/dss-research/integration/Sutton2020-pdf.txt",
+    "provenance_url": "https://www.nature.com/articles/s41746-020-0221-y.pdf",
+    "license": "CC BY 4.0 (publisher full-text Rights and permissions)",
+    "design": "secondary clinical DSS review",
+    "decision": "include",
+    "reason": "Direct DSS implementation benefits, alert overload, rule maintenance and interoperability; supplies counterevidence and limits, not pooled causal effects."
+  },
+  {
+    "key": "Greenhalgh2017",
+    "title": "Beyond Adoption: A New Framework for Theorizing and Evaluating Nonadoption, Abandonment, and Challenges to the Scale-Up, Spread, and Sustainability of Health and Care Technologies",
+    "authors": [
+      "Trisha Greenhalgh",
+      "Joseph Wherton",
+      "Chrysanthi Papoutsi",
+      "Jennifer Lynch",
+      "Gemma Hughes",
+      "Christine A’Court",
+      "Susan Hinder",
+      "Nick Fahy",
+      "Rob Procter",
+      "Sara Shaw"
+    ],
+    "year": 2017,
+    "venue": "Journal of Medical Internet Research",
+    "volume": "19",
+    "issue": "11",
+    "article": "e367",
+    "doi": "10.2196/jmir.8775",
+    "url": "https://www.jmir.org/2017/11/e367/",
+    "access": "full_text",
+    "filepath": "/workspace/dss-research/integration/Greenhalgh2017.pdf",
+    "text_path": "/workspace/dss-research/integration/Greenhalgh2017-pdf.txt",
+    "provenance_url": "https://www.jmir.org/2017/11/e367/PDF",
+    "license": "CC BY 4.0 (publisher article copyright notice)",
+    "design": "interpretive framework synthesis plus six organizational case studies",
+    "decision": "include",
+    "reason": "Direct observations of complex interdependencies and adaptation, including warehouse/risk-stratification case; broader health technology scope is an explicit transfer limit."
+  },
+  {
+    "key": "Beede2020",
+    "title": "A Human-Centered Evaluation of a Deep Learning System Deployed in Clinics for the Detection of Diabetic Retinopathy",
+    "authors": [
+      "Emma Beede",
+      "Elizabeth Baylor",
+      "Fred Hersch",
+      "Anna Iurchenko",
+      "Lauren Wilcox",
+      "Paisan Raumviboonsuk",
+      "Laura M. Vardoulakis"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of CHI",
+    "doi": "10.1145/3313831.3376718",
+    "url": "https://research.google/pubs/a-human-centered-evaluation-of-a-deep-learning-system-deployed-in-clinics-for-the-detection-of-diabetic-retinopathy/",
+    "access": "abstract",
+    "filepath": null,
+    "design": "qualitative deployment study (abstract only assessed)",
+    "decision": "exclude_from_synthesis",
+    "reason": "Author page provides abstract; publisher full-text/PDF requests returned403. Do not use as an assessed empirical source."
+  },
+  {
+    "key": "Brynjolfsson2016",
+    "title": "The Rapid Adoption of Data-Driven Decision-Making",
+    "year": 2016,
+    "doi": "10.1257/aer.p20161016",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.p20161016",
+    "access": "metadata",
+    "filepath": null,
+    "decision": "exclude_from_synthesis",
+    "reason": "Publisher request returned page not PDF; no full text assessed. Source is a lead, not evidence for a numerical outcome."
+  }
+]

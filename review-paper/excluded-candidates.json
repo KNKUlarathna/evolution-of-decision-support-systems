@@ -1,0 +1,148 @@
+[
+  {
+    "key": "ACKOFF1967",
+    "title": "Management Misinformation Systems",
+    "authors": [
+      "Russell L. Ackoff"
+    ],
+    "year": 1967,
+    "venue": "Management Science",
+    "volume": "14",
+    "issue": "4",
+    "pages": "B147–B156",
+    "doi": "10.1287/mnsc.14.4.B147",
+    "url": "https://doi.org/10.1287/mnsc.14.4.B147",
+    "access_status": "abstract",
+    "file_path": null,
+    "text_path": null,
+    "provenance_url": "https://pubsonline.informs.org/doi/abs/10.1287/mnsc.14.4.B147",
+    "provenance_type": "publisher abstract and OpenAlex abstract",
+    "license": null,
+    "license_note": "No article full text obtained.",
+    "source_type": "conceptual critique; abstract only assessed here",
+    "assessed_sections": "Publisher abstract only",
+    "include_recommendation": false
+  },
+  {
+    "key": "Beede2020",
+    "title": "A Human-Centered Evaluation of a Deep Learning System Deployed in Clinics for the Detection of Diabetic Retinopathy",
+    "authors": [
+      "Emma Beede",
+      "Elizabeth Baylor",
+      "Fred Hersch",
+      "Anna Iurchenko",
+      "Lauren Wilcox",
+      "Paisan Raumviboonsuk",
+      "Laura M. Vardoulakis"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of CHI",
+    "doi": "10.1145/3313831.3376718",
+    "url": "https://research.google/pubs/a-human-centered-evaluation-of-a-deep-learning-system-deployed-in-clinics-for-the-detection-of-diabetic-retinopathy/",
+    "access": "abstract",
+    "filepath": null,
+    "design": "qualitative deployment study (abstract only assessed)",
+    "decision": "exclude_from_synthesis",
+    "reason": "Author page provides abstract; publisher full-text/PDF requests returned403. Do not use as an assessed empirical source."
+  },
+  {
+    "key": "Brynjolfsson2016",
+    "title": "The Rapid Adoption of Data-Driven Decision-Making",
+    "year": 2016,
+    "doi": "10.1257/aer.p20161016",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.p20161016",
+    "access": "metadata",
+    "filepath": null,
+    "decision": "exclude_from_synthesis",
+    "reason": "Publisher request returned page not PDF; no full text assessed. Source is a lead, not evidence for a numerical outcome."
+  },
+  {
+    "key": "LourdusamyMattam2021",
+    "title": "Adaptation and Evolution of Decision Support Systems—A Typological Survey",
+    "authors": [
+      "Ravi Lourdusamy",
+      "Xavierlal J. Mattam"
+    ],
+    "year": 2021,
+    "venue": "Modern Approaches in Machine Learning and Cognitive Science: A Walkthrough",
+    "doi": "10.1007/978-3-030-68291-0_8",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-68291-0_8",
+    "pages": "81–94",
+    "access_status": "abstract",
+    "file_path": null,
+    "provenance_url": "https://link.springer.com/chapter/10.1007/978-3-030-68291-0_8",
+    "license": null,
+    "metadata_verified": "cached publisher abstract and citation meta tags from 19 October 2026 retrieval",
+    "evidence_type": "abstract-only positioning",
+    "role": "scope boundary",
+    "selection_decision": "optional background only; do not use as full-text-assessed synthesis evidence"
+  },
+  {
+    "key": "EpplerMengis2004",
+    "title": "The Concept of Information Overload: A Review of Literature from Organization Science, Accounting, Marketing, MIS, and Related Disciplines",
+    "authors": [
+      "Martin J. Eppler",
+      "Jeanne Mengis"
+    ],
+    "year": 2004,
+    "venue": "The Information Society",
+    "doi": "10.1080/01972240490507974",
+    "url": "https://doi.org/10.1080/01972240490507974",
+    "pages": "325–344",
+    "access_status": "metadata",
+    "file_path": null,
+    "provenance_url": "https://doi.org/10.1080/01972240490507974",
+    "license": null,
+    "volume": "20",
+    "issue": "5",
+    "metadata_verified": "Crossref DOI record; OpenAlex reports closed access and no repository full text",
+    "evidence_type": "unassessed candidate",
+    "role": "candidate for information-overload synthesis",
+    "selection_decision": "exclude from substantive extraction because accessible full text not obtained; do not invent findings"
+  },
+  {
+    "key": "DSS005",
+    "title": "A Framework for the Development of Decision Support Systems",
+    "year": 1980,
+    "url": "https://aisel.aisnet.org/misq/vol4/iss4/1/",
+    "access_status": "abstract_or_metadata",
+    "selection_decision": "excluded from substantive full-text synthesis",
+    "reason": "Publisher redirected to subscription login; no full text assessed."
+  },
+  {
+    "key": "DSS010",
+    "title": "A Critical Analysis of Decision Support Systems Research",
+    "year": 2005,
+    "url": "https://aisel.aisnet.org/jit/vol20/iss2/2/",
+    "access_status": "abstract_or_metadata",
+    "selection_decision": "excluded from substantive full-text synthesis",
+    "reason": "Publisher PDF request403; no full text assessed."
+  },
+  {
+    "key": "DSS023",
+    "title": "A Foundation for the Study of Group Decision Support Systems",
+    "year": 1987,
+    "url": "https://doi.org/10.1287/mnsc.33.5.589",
+    "access_status": "abstract_or_metadata",
+    "selection_decision": "excluded from substantive full-text synthesis",
+    "reason": "Publisher abstract only; no full text assessed."
+  },
+  {
+    "key": "DSS033",
+    "title": "Business Intelligence and Analytics: From Big Data to Big Impact",
+    "year": 2012,
+    "url": "https://doi.org/10.2307/41703503",
+    "access_status": "abstract_or_metadata",
+    "selection_decision": "excluded from substantive full-text synthesis",
+    "reason": "Official article retrieval failed; repository false match was rejected."
+  },
+  {
+    "key": "DSS014",
+    "title": "Adaptation and Evolution of Decision Support Systems: A Typological Survey",
+    "year": 2021,
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-68291-0_8",
+    "access_status": "abstract_or_metadata",
+    "selection_decision": "excluded from substantive full-text synthesis",
+    "reason": "Publisher preview/abstract only; no full text assessed."
+  }
+]

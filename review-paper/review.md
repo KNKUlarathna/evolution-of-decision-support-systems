@@ -1,618 +1,381 @@
-# Why Decision Support Systems Evolve: A Critical Review of Computational Capacity, Architectures, and Decision Requirements
+# Organizational Complexity, Data Growth, and Decision Support Systems: A Critical Integrative Review of Their Feedback Dynamics
 
-Unattributed review draft
+Unattributed review manuscript
 
 ## Abstract
 
-Decision support systems (DSS) have expanded from interactive analytical models to knowledge-based systems, collaborative platforms, data warehouses, predictive models, and language-model-based assistants and agents. A chronology alone does not explain these transitions. This critical narrative review compares the limitation motivating each transition, the contribution of computational capacity, the architectural innovation introduced, and the decision problem left unresolved. It draws on a repository catalog of 67 records and a purposive selection of accessible foundational and technical papers. The synthesis indicates that computing capacity primarily expands feasible scale, whereas architectures change how systems represent knowledge, integrate evidence, interact with users, and execute actions. Neither mechanism alone establishes decision quality. Explicit preferences, valid objectives, trustworthy data, and organizational accountability remain necessary across generations. Recent retrieval and agent architectures reuse earlier ideas of external knowledge, modular tools, and human oversight rather than eliminating them. A transition matrix and a proposed evaluation framework connect historical developments to practical choices about when to scale, redesign, or retain an existing DSS. The review makes no quantitative causal estimate or claim of exhaustive literature coverage.
+Decision support systems (DSS) are commonly described through successive technologies, but technological chronology alone does not explain their changing organizational role. This critical integrative review examines how organizational complexity, data growth, and decision support can form reinforcing and balancing feedback relationships. A purposive, full-text corpus of 24 works integrates organizational information-processing theory, primary DSS frameworks, architecture studies, organizational cases, and formal or simulated endogenous-data mechanisms. The synthesis distinguishes organizational interdependence and equivocality from record volume, and technical throughput from usable organizational processing capacity. Five overlapping information-processing configurations illustrate historical responses: interactive models, codified and collaborative expertise, enterprise analytical integration, data-dependent prediction, and evidence-linked workflow support. Across them, additional data and computational capacity can alleviate a constraint while transferring work to interpretation, integration, maintenance, or coordination. The reverse relationship is conditional: decision policies can shape future observations, and coupled analytical systems can create new coordination obligations, but neither mechanism proves inevitable growth in organizational complexity or data volume. A link-specific mechanism map, three analytical illustrations including organizational case evidence, and five propositions identify when amplification, stabilization, or simplification is plausible. The contribution is an evidence-traceable synthesis of these relationships, rather than a claim that feedback is newly discovered or that the complete historical loop has been causally established.
 
-<div class="IEEEkeywords">
+#### Index terms
 
-decision support systems, architectural evolution, computational
-capacity, business intelligence, expert systems, large language models,
-human oversight
-
-</div>
+Decision support systems, organizational complexity, information processing, data growth, feedback, sociotechnical systems, endogenous data.
 
 # Introduction
 
-Decision support is concerned with improving decisions, not simply
-producing more information. A system may calculate an optimum, retrieve
-an explanation, predict an outcome, or recommend an action; these are
-different contributions to a decision process. Historical accounts
-document the expansion from individual analytical support to group,
-organizational, and Web-based support \[1\], \[2\]. The important
-question for system design is why a particular expansion became
-necessary and what made it possible.
-
-Two explanations recur. One attributes progress to cheaper and more
-powerful computation, larger memories, faster networks, and more
-accessible data storage. The other emphasizes representations and
-architectures: separating a knowledge base from inference, separating
-analytical from transactional workloads, learning representations,
-retrieving external evidence, or orchestrating tools. The explanations
-interact. An architecture determines which computations are useful and
-parallelizable; available hardware determines whether the architecture
-can operate at acceptable cost and latency.
-
-This review asks: (RQ1) Which limitations motivated movement between
-major DSS approaches? (RQ2) What distinct roles did computational
-capacity, architecture, data, and organizational requirements play?
-(RQ3) Which unresolved limitations explain the direction of subsequent
-development? Its contribution is a consistent transition comparison
-rather than a claim that all systems followed a single sequence.
-Model-driven, knowledge-driven, data-driven, document-driven, and
-communications-driven DSS coexist in Power’s classification \[2\]. The
-periods used below describe the emergence and increasing visibility of
-approaches, not dates when earlier approaches disappeared.
-
-# Review Design and Evidence Boundaries
-
-## Corpus and Selection
-
-The starting corpus is the repository’s `DSS_Evolution_Literature.json`,
-containing 67 records spanning 1965–2026. It includes 42 direct PDF
-links, of which 38 files were obtained during environment preparation.
-File counts do not establish 38 independent, relevant studies: versions,
-overlapping topics, and metadata errors require separate screening. This
-review uses a purposive subset linking historical DSS syntheses to
-technical contributions that expose a transition mechanism. The selected
-set covers historical classification, knowledge engineering, preference
-modeling, data integration, machine learning, explainability,
-Transformers, retrieval, and tool use.
-
-The 24 cited records are listed in the companion evidence matrix.
-Twenty-three have locally available PDF text; the PROMETHEE record is
-supported here by publisher metadata because its downloaded article
-pages are not usefully text-extractable. Such access limitations are not
-interpreted as negative research findings. Early developments are also
-interpreted through historical syntheses, so some historical conclusions
-rely on secondary evidence. Recent catalog entries with insufficiently
-checked identities or publication details are not used simply because
-their filenames appear relevant.
-
-## Extraction and Synthesis
-
-For each selected work, the synthesis records: the problem described;
-the proposed mechanism; its computational or infrastructural
-requirements; and the limitation that persists. Full-text abstracts,
-introductions, and mechanism discussions were used to check these
-relationships. References retain catalog identifiers in the evidence
-matrix for traceability. Bibliographic information is taken from
-accessible article text or the catalog and identified conservatively
-where only a preprint was checked.
-
-This is a critical narrative review, not a systematic review or
-meta-analysis. No independent database search, preregistered protocol,
-dual screening, risk-of-bias scoring, or pooled effect estimate was
-conducted. Inclusion is driven by explanatory relevance and access,
-introducing selection and availability bias. A paper’s benchmark result
-supports a capability under its reported conditions; it does not
-establish enterprise adoption or causally explain a field-wide
-historical transition. Statements connecting different periods are the
-review’s interpretive synthesis.
-
-## Comparison Framework
-
-Four drivers organize the comparison. *Capacity* concerns feasible data
-volume, memory, throughput, and latency. *Architecture* concerns
-representations, interfaces, component boundaries, and control flow.
-*Data and knowledge* concern usable observations, labels, documents, and
-expertise. *Decision requirements* concern objectives, preferences,
-collaboration, accountability, and workflow fit. These categories avoid
-treating faster hardware as evidence of better decisions or treating
-every software change as a new generation.
-
-# Evolution Through Unresolved Bottlenecks
-
-## Interactive Model-Driven Support: From Reports to Exploration
-
-Early DSS distinguished interactive analytical support from routine
-information reporting. In the historical synthesis of Shim *et al.*,
-classic systems combine database capabilities, modeling, and an
-interface \[1\]. The motivating limitation is that a fixed report
-describes a situation but does not necessarily let a manager explore
-alternatives or change assumptions. Interactive models provide what-if
-analysis, optimization, and sensitivity analysis while leaving judgment
-with the decision maker.
-
-Greater computational availability makes repeated calculations and
-interactive response practical. The architectural contribution is
-equally important: data access, model execution, and the dialogue with a
-user must work together. A faster batch report does not automatically
-become a usable interactive decision model. The resulting systems remain
-constrained by assumptions, the cost of maintaining models, and their
-limited representation of tacit domain knowledge. This motivates
-knowledge-oriented support for tasks whose expertise cannot easily be
-expressed as one numerical objective. It also motivates collaboration
-when several stakeholders must agree on objectives. These are branching
-responses, not the replacement of mathematical models.
-
-## Knowledge-Based Support: From Equations to Explicit Expertise
-
-Knowledge engineering addresses tasks in which expert judgments and
-domain-specific inference are central. Feigenbaum discusses acquiring,
-representing, and using expert knowledge, including explanations of
-reasoning \[3\]. The important innovation is an explicit representation
-of knowledge that an inference process can apply. Later expert-system
-literature documents a variety of methods and applications rather than a
-single uniform implementation \[4\].
-
-More processor time and memory permit larger rule sets and broader
-search, but do not supply missing expertise. A rule-based architecture
-can expose the basis for a conclusion, yet its quality depends on the
-rules, their scope, and their maintenance. The knowledge-acquisition and
-maintenance problem is therefore representational and organizational as
-well as computational. Expanding hardware cannot ensure that an expert’s
-exception has been elicited or that a rule remains valid after a policy
-change.
-
-These limitations help explain the attraction of learning patterns from
-observations. However, statistical learning changes the source of
-knowledge rather than abolishing the need for domain expertise. Labels,
-target definitions, and evaluation criteria still encode expert choices.
-A subsequent generation may reduce manual rule authoring while
-increasing demands for representative data and monitoring.
-
-## Preference and Group Support: From One Objective to Negotiated Choices
-
-Many decision problems have several criteria and several decision
-makers. Faster optimization does not determine how to trade cost against
-safety, or whose preference should prevail. Multi-criteria methods,
-including preference-ranking approaches, provide explicit machinery for
-comparing alternatives \[5\]. The modern comparison between
-multiple-criteria decision aiding and preference learning shows both
-shared goals and different assumptions about how decision models are
-constructed \[6\].
-
-Group and communications support respond to coordination requirements
-described in the DSS historical literature \[1\], \[2\]. Networking
-increases access and communication speed; collaborative interfaces
-change participation and information exchange. Neither alone resolves
-disagreement. A technically efficient group system may reproduce unequal
-participation or give an unjustified appearance of consensus.
-
-This strand persists throughout the history. Data-driven systems can
-estimate consequences without choosing acceptable trade-offs. Language
-models can articulate a preference without having authority to set it.
-The transition pressure is thus not simply “more compute” but the need
-to make values, alternatives, and participation explicit. Preference
-modeling becomes a complement to later predictive and generative
-systems.
-
-## Warehousing, OLAP, and Web DSS: From Isolated Models to Shared Data
-
-As organizations accumulate operational records, isolated application
-databases and manually assembled inputs become obstacles. Chaudhuri and
-Dayal describe data warehousing and online analytical processing (OLAP)
-as decision-support technologies, including the distinct needs of
-analytical workloads \[7\]. Warehousing integrates data for analysis;
-multidimensional structures and query techniques support repeated
-analytical exploration. Web-based DSS broaden access and organizational
-reach in the historical account \[1\].
-
-Larger storage, faster processors, and better networks make integration
-and interactive queries feasible at greater scale. The decisive
-architectural change is not merely putting old software on a faster
-machine. Separating analytical workloads from transaction processing and
-providing a shared analytical representation changes what questions
-users can ask without disrupting operations. Web interfaces also change
-deployment and distribution rather than the underlying validity of a
-decision model.
-
-The new bottleneck becomes meaning and relevance. Integrating
-inconsistent identifiers, definitions, and update schedules is a
-governance task. A dashboard can display correlations without explaining
-causes or selecting an action. Consequently, warehousing supports
-subsequent data mining and prediction, but high data volume does not
-itself guarantee useful knowledge.
-
-## Data Mining and Distributed Analytics: From Access to Discovery
-
-Fayyad *et al.* distinguish knowledge discovery as a broader process
-from the algorithmic step of data mining \[8\]. The motivating
-limitation is that access to records and aggregates does not
-automatically reveal useful patterns. Selection, preparation,
-interpretation, and evaluation matter alongside the mining algorithm.
-
-At larger scale, implementation complexity also becomes a limitation.
-Dean and Ghemawat’s MapReduce combines a programming model with an
-implementation that handles distribution and failures \[9\]. Additional
-machines provide capacity; the abstraction makes some large-scale
-computations manageable. It illustrates architecture and hardware
-enabling one another: a cluster’s aggregate processing power is not
-useful if application developers cannot reliably divide and execute the
-workload.
-
-Distributed processing addresses throughput for suitable tasks, not
-every interactive requirement. Batch-friendly computation does not
-necessarily meet low-latency operational decisions, and an efficient
-pipeline can propagate poor-quality inputs more quickly. The pressure
-toward predictive systems is therefore coupled with continued needs for
-data quality, valid targets, and deployment integration.
-
-## Machine Learning and Deep Learning: From Crafted Rules to Learned Representations
-
-Predictive machine learning learns relationships from observations
-rather than requiring every decision rule to be written explicitly.
-Random forests illustrate an ensemble architecture for prediction
-\[10\]; Jordan and Mitchell place learning within a broader
-technological and scientific context \[11\]. These approaches support
-ranking, forecasting, and risk estimation, but the model’s output is not
-automatically a decision prescription.
-
-Deep learning extends the shift from hand-designed features toward
-learned representations. LeCun *et al.* describe multilayer models and
-their ability to learn structure in images, speech, and other data
-\[12\]. Increased computation and available training data help make
-large models practical. The architectural contribution is the
-representation and training procedure that can exploit those resources.
-More hardware applied to an unsuitable representation is not equivalent
-to a more effective learning system.
-
-The new limitations include opaque predictions, changing input
-distributions, and mismatch between predictive loss and decision costs.
-Ribeiro *et al.* and Lundberg and Lee address explaining model
-predictions \[13\], \[14\]. An explanation can help inspect model
-behavior; it does not prove causal validity, fairness, or reliability
-under a distribution shift. The next design pressure is therefore to
-connect learned outputs with human understanding and decision
-accountability, rather than simply maximizing predictive accuracy.
-
-## Transformers and Foundation Models: From Task Models to Reusable Interfaces
-
-Task-specific machine-learning systems often require separate pipelines,
-labels, and interfaces. The Transformer replaces recurrence with
-attention-based sequence modeling and supports more parallelizable
-training in the reported translation setting \[15\]. This is a concrete
-case where an architectural choice changes how effectively available
-hardware can be used. It should not be read as showing that compute
-alone caused the later adoption of language models in DSS.
-
-Large pretrained language models support reuse across tasks. Brown *et
-al.* demonstrate few-shot behavior for a large language model \[16\].
-For decision support, natural-language interaction can reduce the effort
-needed to query documents, describe alternatives, and produce summaries.
-Chain-of-thought prompting further explores eliciting intermediate
-reasoning in particular benchmark settings \[17\].
-
-These developments do not establish that fluent explanations are valid
-decisions. A generated answer can be unsupported, outdated, inconsistent
-with policy, or insensitive to stakeholder preferences. Larger models
-may improve some capabilities while increasing training and serving
-costs. The resulting pressure is toward external evidence, explicit
-tools, and checks that do not depend solely on the model’s own generated
-text.
-
-## Retrieval-Augmented Support: From Parametric Memory to Inspectable Evidence
-
-Lewis *et al.* identify limitations in accessing knowledge, updating it,
-and providing provenance, and combine a generator with non-parametric
-retrieval \[18\]. Retrieval-augmented generation (RAG) changes the
-information path: an external collection supplies evidence at inference
-time. It is therefore a response to a knowledge-access and maintenance
-problem, not simply another increase in model size.
-
-Storage and search capacity support indexing larger collections; the
-architecture couples retrieval to generation. In DSS, this separation
-offers a way to use current organizational documents while keeping
-document updates distinct from model training. Nevertheless, retrieval
-can miss relevant material, retrieve conflicting evidence, or expose
-documents to users who lack access. A citation does not establish that
-the cited passage supports the generated claim. Evaluation must
-distinguish retrieval coverage, evidence relevance, answer support, and
-decision usefulness.
-
-RAG also reveals continuity with earlier DSS: external knowledge stores
-and user-facing explanations remain central. The implementation differs
-from symbolic inference, but the need to maintain authoritative
-knowledge does not disappear.
-
-## Tool-Using Agents: From Answers to Controlled Actions
-
-An assistant that produces an answer may still leave users to gather
-additional evidence, calculate values, and execute a workflow. ReAct
-interleaves reasoning and actions with observations \[19\]; Toolformer
-investigates learning when and how to call tools \[20\]. AutoGen
-explores multi-agent conversation as an application framework \[21\].
-These mechanisms expand control flow beyond a single model response.
-
-Available inference capacity makes repeated model calls and
-orchestration feasible. The architectural change is the feedback loop
-among a model, tools, state, and the environment. Tool interfaces can
-delegate arithmetic or retrieval to specialized components. Multiple
-agents can assign different roles, but additional roles do not guarantee
-independent evidence or reliable agreement. Self-refinement similarly
-explores iterative feedback \[22\]; repeated generation should not be
-equated with external validation.
-
-The new exposure is that an incorrect output can become an incorrect
-action. Valmeekam *et al.*’s evaluated planning models show substantial
-limitations in executable planning \[23\]. Those results concern the
-models and tasks studied, not every subsequent model. They nevertheless
-justify evaluating plan validity and execution outcomes separately from
-linguistic plausibility. An agentic DSS therefore needs explicit action
-permissions, stopping conditions, observable state, and escalation to an
-accountable person. Human oversight is a continuing design requirement,
-not a temporary defect to be removed by scaling.
-
-<div class="table*">
-
-| Approach and emergence                     | Prior bottleneck / demand                   | Capacity contribution                   | Architectural contribution                     | Remaining pressure                                  |
-|:-------------------------------------------|:--------------------------------------------|:----------------------------------------|:-----------------------------------------------|:----------------------------------------------------|
-| Interactive model DSS (1960s–1970s)        | Fixed reporting; semi-structured choices    | Repeated calculations at usable latency | Data–model–dialogue integration                | Model assumptions; tacit expertise \[1\], \[2\]     |
-| Knowledge-based DSS (1970s–1980s)          | Need to operationalize domain expertise     | More rules and inference search         | Explicit knowledge and inference               | Acquisition, maintenance, narrow scope \[3\], \[4\] |
-| Preference/group DSS (1970s onward)        | Conflicting criteria and stakeholders       | Interactive comparison; networking      | Preference models and participation mechanisms | Unresolved value judgments \[1\], \[5\], \[6\]      |
-| Warehouse/Web DSS (1990s–2000s)            | Fragmented data and restricted access       | Storage, query speed, connectivity      | Analytical integration and shared interfaces   | Semantics and useful interpretation \[1\], \[7\]    |
-| Mining/distributed analytics (1990s–2000s) | Aggregates insufficient; data too large     | Cluster throughput                      | Discovery pipeline; fault-tolerant execution   | Data quality; operational latency \[8\], \[9\]      |
-| ML/deep learning (2000s–2010s)             | Hand-crafted rules/features                 | Training and inference capacity         | Ensembles; learned representations             | Opacity, drift, objective mismatch \[10\]–\[14\]    |
-| Foundation-model assistants (2017 onward)  | Task-specific interfaces and adaptation     | Large-scale pretraining and serving     | Attention; reusable language interface         | Unsupported or stale answers \[15\]–\[17\]          |
-| Retrieval augmentation (2020 onward)       | Knowledge updates and provenance            | Indexing and retrieval at scale         | External evidence coupled to generation        | Retrieval errors; unsupported citations \[18\]      |
-| Tool-using agents (2022 onward)            | Answers insufficient for workflow execution | Multiple inference/tool steps           | Observe–act loops; orchestration               | Invalid actions, cost, accountability \[19\]–\[23\] |
-
-</div>
-
-# Cross-Generation Comparison
-
-## Capacity Expands Feasibility; Architecture Changes the Task
-
-Table I highlights different kinds of change. Faster hardware can
-shorten optimization time or expand a dataset without changing a
-system’s knowledge representation. A warehouse, by contrast, changes
-analytical data organization; RAG changes access to external evidence; a
-tool loop changes whether a system only describes or also acts. These
-distinctions matter when diagnosing an inadequate DSS. More hardware is
-appropriate when a suitable computation cannot meet workload
-requirements. Redesign is necessary when the system cannot represent a
-requirement or obtain the needed evidence.
-
-The interaction is visible in MapReduce and the Transformer: both
-organize computation so available resources can be used differently
-\[9\], \[15\]. Their demonstrated settings should not be generalized
-into a universal claim that distributed processing or attention is best
-for every DSS. A small, auditable optimization model can remain more
-appropriate than a large generative system when the decision structure
-and constraints are explicit.
-
-## Data Availability Is Not Decision Sufficiency
-
-The path from rules to learned models shifts effort from eliciting
-explicit knowledge to collecting observations and defining learning
-objectives. The shift from parametric language models to RAG moves some
-knowledge maintenance into a document pipeline. In each case, a burden
-is relocated rather than removed. Data completeness, consent,
-provenance, and relevance remain prerequisites. Prediction quality also
-differs from decision quality: an accurate demand forecast may still
-lead to a poor inventory decision if shortage costs or constraints are
-wrong.
-
-Preference learning and multi-criteria decision aiding offer a useful
-bridge because they connect learned evidence with explicit comparisons
-and values \[6\]. However, inferred behavior should not automatically be
-treated as an endorsed preference. Hybrid systems should let users
-inspect or revise consequential objectives rather than silently deriving
-authority from historical data.
-
-## No Single Replacement Sequence
-
-The comparison does not imply that expert systems replaced models, that
-learning replaced explicit rules, or that agents replaced business
-intelligence. Power’s classification separates the dominant technology
-from deployment and target users \[2\]. A modern architecture may
-combine a warehouse, predictive model, constrained optimizer, policy
-rules, and a conversational interface. The broader DSS literature also
-cautions against neglecting practical relevance and decision-theoretic
-foundations \[24\].
-
-The most defensible evolutionary interpretation is accumulation and
-recombination. New components address constraints that older components
-leave unresolved, but earlier components can remain authoritative within
-their scope. In particular, an LLM can gather or explain evidence while
-a validated numerical solver performs optimization and a human approves
-a consequential action.
-
-# Evaluation Implications and Research Agenda
-
-The following framework is proposed by this review; it has not been
-experimentally validated. Evaluate a DSS at five levels. First, test
-evidence quality: coverage, freshness, provenance, and access
-restrictions. Second, test model or rule validity on task-relevant cases
-and changes in operating conditions. Third, test decision quality using
-explicit utilities, constraints, and sensitivity to preferences. Fourth,
-test interaction and workflow effects, including user understanding,
-correction, and escalation. Fifth, measure total operational cost,
-latency, and action failures. Report these separately instead of
-combining them into an unexplained score.
-
-To investigate whether a transition is driven by capacity or
-architecture, compare three configurations where feasible: a baseline;
-the same design with greater computational resources; and a redesigned
-system under a matched resource budget. Keep task definitions, data
-access, and human involvement explicit. For agent systems, include a
-single-agent baseline, tool-only alternatives, and executable-outcome
-checks. For RAG, report retrieval and grounding performance separately.
-Such studies would provide stronger evidence than attributing progress
-to model size or a new architectural label.
-
-Three research questions follow. How can DSS distinguish disagreement
-about facts from disagreement about values? When does added
-orchestration improve outcomes enough to justify latency and failure
-exposure? How can longitudinal evaluation detect when the benefits of a
-new representation are offset by knowledge maintenance or organizational
-costs? These questions connect recent language-model architectures with
-enduring concerns in knowledge engineering and DSS practice.
+Organizations divide work among people, functions, locations, and increasingly interconnected digital services. Differentiation can create useful specialization while making decisions depend on information held elsewhere. Transactions, monitoring, and coordination generate records that may help manage those dependencies. Yet collecting more records does not automatically create shared understanding, and supporting more decisions can itself introduce interfaces, exceptions, and maintenance obligations. The evolution of DSS therefore raises a reciprocal question: how do organizational information requirements and data-intensive support arrangements change one another?
+
+Foundational organizational information-processing accounts relate task uncertainty and interdependence to the work required to coordinate action \[1\], \[2\]. DSS scholarship, meanwhile, documents changing combinations of models, databases, knowledge, interfaces, and collaboration \[3\], \[4\]. Read together, these traditions suggest that architectures evolve partly in response to a mismatch between required and usable processing capacity. However, a mismatch can be addressed by reducing information requirements as well as by increasing technical capacity. The same organizational problem may therefore motivate a more integrated DSS, a simpler decision model, a changed coordination structure, or no technological investment.
+
+The reverse direction matters too. Analytical interventions can change which events are observed and how subsequent decisions are made. Production learning systems also couple data, models, and teams in ways that ordinary software modularity may not contain \[5\], \[6\]. These mechanisms make feedback plausible, but they do not establish a universal sequence in which complexity always produces more data, which always produces a newer DSS and still more complexity. They operate at different levels, with different evidence and boundary conditions.
+
+This review addresses three questions. RQ1: Under what conditions do organizational complexity and data growth increase decision-support requirements? RQ2: How have DSS information-processing arrangements absorbed, redistributed, or reduced those requirements? RQ3: When can decision support alter future observations and coordination demands, reinforcing or balancing the original pressure? The focus is the organization–data–decision relationship, rather than a ranking of algorithms or an exhaustive inventory of DSS applications.
+
+The contribution has three parts: a construct-consistent comparison across historical DSS arrangements; a mechanism map distinguishing supported directional links from cross-study conjectures; and propositions connecting those links to observable organizational conditions. It does not claim that feedback, sociotechnical reciprocity, or information-processing fit is new. Rather, it connects historical DSS arguments with evidence on endogenous observations and lifecycle coordination, while making countermechanisms explicit.
+
+# Review Design and Positioning
+
+## Approach and Eligibility
+
+The study is a critical integrative review using theory-guided, purposive selection. Discovery and assessment for this revision were conducted on 21 October 2026, with publication eligibility ending on that date. The initial DSS catalog contained 67 records; it served as a discovery resource, not as a fully screened or representative study population. Additional targeted searches used Crossref bibliographic metadata, exact-title searches, and authoritative publisher, author, institutional, and archival copies. Searches targeted organizational information processing, DSS history, data-dependent feedback, and organizational implementation. Some metadata queries were rate-limited; unsuccessful access attempts were retained in the search record rather than silently treated as completed searches.
+
+Sources were eligible for substantive synthesis if accessible full text supported at least one of five roles: defining information-processing requirements; explaining a DSS information-processing arrangement; reporting organizational implementation; analyzing feedback in data-dependent decisions; or providing directly comparable prior synthesis. Sources with only metadata or abstracts were recorded as leads, not used as assessed substantive evidence. English-language sources were used; seminal works were retained irrespective of age. The selection was not designed to estimate a publication population, and no exhaustive database search, PRISMA compliance, or independent human dual screening is claimed.
+
+After source-identity reconciliation, the included corpus comprises 24 distinct works: four organizational-theory sources, eight historical/classification sources, five feedback or production-learning sources, two clinical implementation/synthesis sources, three technical mechanism sources, and two additional closely related reviews. Two historical sources also serve in prior-review positioning; they are counted once. These are selection roles, not mutually exclusive research-design categories. An explicit selection register and excluded-candidate record accompany the manuscript. Complete texts were available, but assessment concentrated on the argument, methods, relevant findings, and limitations rather than claiming sentence-by-sentence verification of every document.
+
+## Extraction and Critical Appraisal
+
+Extraction recorded the construct or decision problem, information/data relationship, proposed processing response, additional dependencies, countermechanisms, source design, and transfer limits. Supporting locations use published pages where reliable and scan-PDF pages for the assessed MIT working papers. Three foundational theory scans required optical character recognition; evidence was interpreted in context, and exact quotations are avoided. Little’s 1969 and Gorry and Scott Morton’s 1971 working-paper versions are cited as the versions actually assessed, without substituting journal pagination \[7\], \[8\].
+
+Evidence was separated into conceptual theory, historical or secondary synthesis, technical architecture, organizational case evidence, mathematical analysis, and simulation. A theory can justify a relationship without estimating its magnitude; a simulation can expose feedback without demonstrating its organizational prevalence. A publication-content analysis measures research activity, not adoption. This distinction responds to the theory/practice problem identified within DSS scholarship \[9\]. No numerical quality score or pooled effect size was constructed across these incompatible designs.
+
+Each mechanism was considered against a rival explanation or boundary: differences in the information required, receiver attention, selection effects, organizational choice, stable feedback, and implementation failure. Source and claim matrices document these checks. Search logs, metadata/provenance, access decisions, and extraction records accompany the paper; they support inspection of the purposive synthesis, not replication of an exhaustive search. Research and drafting were assisted by language-model tools; there was no independent human validation of the screening or coding.
+
+## Relationship to Existing Reviews
+
+DSS evolution already has substantial historical and architectural coverage. Shim *et al.* connect organizational and technical developments, including wider collaboration and increasing analytical demands \[3\]. Power’s classification separates the dominant support technology from users, purpose, and deployment \[4\]. Recent reviews discuss architectural autonomy, organizational context, governance, and feedback \[10\], \[11\]. Accordingly, neither adding an organizational perspective nor drawing a feedback arrow establishes novelty. Table I identifies the narrower extension attempted here.
+
+The closest reviews are useful for positioning but are not treated as primary confirmation of causal effects. Budianto *et al.*’s strategic-AI framework remains conceptual, and the visible article does not expose enough record-level material to independently reconstruct its reported included-study population \[10\]. Eze *et al.* explicitly adopt an integrative approach, yet the article retains broad cross-category performance numbers alongside a warning against heterogeneous comparison \[11\]. Those numbers are not used here. These are appraisal limits of the available documents, not judgments about author intent.
+
+
+
+**Table I. Positioning against assessed prior DSS syntheses**
+
+<span id="tab:prior" label="tab:prior"></span>
+
+| Prior synthesis          | Organizing lens                                      | Relationships already addressed                                                                  | Extension attempted in this review                                                                                   |
+|:-------------------------|:-----------------------------------------------------|:-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+| Shim *et al.* \[3\]      | DSS history, tools, deployment and collaboration     | Organizational/technical drivers; more users and data; technology enabling virtual organizations | Link historical mechanisms to explicit information-processing constructs and distinguish forecasts from observations |
+| Arnott and Pervan \[9\]  | Content analysis and discipline quality              | Theory/practice gaps; overlapping DSS research categories                                        | Separate research activity from adoption and trace claims to appropriate evidence types                              |
+| Budianto *et al.* \[10\] | Architectural autonomy and strategic business value  | Architectural phases, hidden feedback, technical debt and governance                             | Examine conditional amplification, balancing mechanisms and causal-evidence limits                                   |
+| Eze *et al.* \[11\]      | Taxonomy, architectures, applications and governance | Information-processing theory, hybrid DSS and workflow iteration                                 | Distinguish within-workflow feedback from organization-level coevolution and volume from coordination demands        |
+
+
+
+# Constructs and Theoretical Foundations
+
+## Organizational Complexity Is Not Data Volume
+
+Organizational complexity is used here as a multidimensional description: differentiated tasks or units, interdependence among their actions, variation in work, and uncertainty or contested interpretation during coordination. These dimensions can change separately. More employees or transactions may increase scale without increasing reciprocal task interdependence. Conversely, a small multidisciplinary decision can involve substantial ambiguity and conflicting objectives. The review therefore does not assume a single measured complexity index.
+
+Galbraith links uncertainty during task execution to information-processing requirements, including replanning and exception handling \[1\]. Tushman and Nadler relate uncertainty to task characteristics, environment, and interunit interdependence, while distinguishing relevant information from unprocessed data \[2\]. These theories explain why the location and interpretation of knowledge matter, rather than equating an organization with a container of records. Their causal propositions are theory informed by examples and prior research, not direct measurements of the history of DSS.
+
+Daft and Lengel add a crucial distinction: uncertainty involves missing answers to sufficiently specified questions, whereas equivocality involves competing interpretations of the situation or question itself \[12\]. Collecting additional relevant observations may reduce the former. It need not resolve the latter, which can require shared language, negotiation, and changes in problem framing. Treating both as a shortage of bytes invites a technically efficient response to the wrong organizational problem.
+
+## Data Growth and Usable Processing Capacity
+
+Data volume denotes the quantity of recorded transactions, observations, or documents available over time. Variety, arrival rate, quality, access restrictions, and provenance are separate properties. A larger archive can contain more duplicates or policy-shaped observations, without a proportionate gain in policy-independent or decision-relevant evidence. The amount stored also differs from the amount presented to a decision maker. A well-designed DSS can expand its underlying archive while reducing the information a person must inspect.
+
+Usable processing capacity denotes the combined ability to acquire, validate, interpret, coordinate, and act on relevant evidence at the required time. It includes computational throughput, memory, storage and networks, but also attention, semantic agreement, expertise, decision authority and maintenance resources. This is an organizing construct, not a measured scalar added across incompatible units. Simon’s attention argument explains why increasing communication output can overload downstream receivers rather than improve organizational performance \[13\].
+
+The distinction also prevents an overly simple hardware-versus-architecture dichotomy. Faster computation can make more frequent replanning feasible; representation and interfaces determine which information can be used; organizational design determines who must interpret and act on it. Galbraith explicitly connects replanning frequency with computer time and input/output work while also warning about receiver overload \[1\]. A technical capacity gain is consequently an affordance whose value depends on the rest of the processing arrangement.
+
+## Fit, Selection, and Organizational Choice
+
+A capacity mismatch does not force technological escalation. Galbraith identifies slack resources and self-contained tasks as ways to reduce processing requirements, alongside vertical information systems and lateral relations that increase capacity \[1\]. Tushman and Nadler likewise reject a unique mapping from information requirements to one organizational structure \[2\]. Organizations may accept buffers, narrow a service, change decision rights, coordinate laterally, invest in a DSS, or tolerate poorer performance.
+
+Early DSS sources reinforce this contingency. Gorry and Scott Morton distinguish the character of information required for strategic, managerial and operational decisions; strategic work does not necessarily benefit from masses of operational detail \[8\]. Sampling and selective coupling can be more appropriate. Little’s argument for simple, controllable models similarly challenges the assumption that more detailed models are better used \[7\]. These balancing mechanisms are central to the proposed explanation, not exceptions added after a technological growth narrative.
+
+# Historical Evolution as Changing Processing Arrangements
+
+## A Consistent Unit of Comparison
+
+The historical unit is a *DSS information-processing arrangement*: the combination of organizational decision scope, information representation, processing components, and coordination responsibilities that supports a class of decisions. Five configurations below are analytical exemplars, not mutually exclusive generations. Their temporal order follows landmark records and broad historical descriptions, rather than estimated adoption curves. Components can be recombined: a Web interface does not make a model-driven system a new decision methodology, and retrieval can be added to a knowledge- or document-oriented system \[4\].
+
+This choice separates organizational requirements from technical components while allowing comparison at a common level. Each configuration is examined using the same questions: what information-processing problem is addressed; how does data enter; what capacity or architecture helps; and where can additional work or feedback arise? Table II summarizes the comparison. It should not be read as evidence that every organization experienced these phases.
+
+## Interactive Local Models and Managerial Dialogue
+
+In the assessed late-1960s and early-1970s frameworks, the problem is not only calculation speed but the relationship between a model and a manager’s partially structured decisions. Little argues for models that are understandable, controllable and adaptable; the ADBUDG II example was then in trial use by three product managers \[7\]. This is design and anecdotal evidence, not an effectiveness trial. Gorry and Scott Morton identify both remote access/flexible interaction and conceptual understanding of decision processes as enabling developments \[8\].
+
+Computing capacity makes repeated calculations and short-turnaround exploration practical. The architecture connects inputs, models and a dialogue through which a manager changes assumptions and examines consequences. Iteration can reveal input errors or missing factors, producing demand for different data. Yet adding detail in response to mistrust can make a model less understandable. Little’s example therefore exposes an early feedback tension: a modeling response can amplify the usability problem it was meant to solve.
+
+The balancing response is selective representation. A compact, decision-relevant model can support a complex decision without collecting every operational detail. This configuration is evidence against treating volume growth as the necessary origin of DSS: managerial judgment, usability and problem representation were already central constraints.
+
+## Codified and Collaborative Expertise
+
+Knowledge-based support addresses scarce expertise and the difficulty of applying domain knowledge consistently. Feigenbaum’s knowledge-engineering examples emphasize acquisition, representation and use of expert knowledge, including pulmonary interpretation in PUFF \[14\]. Computation allows rules and inference procedures to operate at useful speed, but the decisive resource is not simply a larger dataset. Expertise must be elicited and represented.
+
+At broader organizational scope, group and networked support address distributed knowledge, participation and coordination \[3\]. Codification and collaboration are different mechanisms within a shared processing problem: relevant expertise is distributed or difficult to reuse. They can reduce repeated search and interpretation, while adding responsibilities for maintaining rules, reconciling meanings and identifying who may decide. Collaboration remains necessary when the issue concerns competing goals rather than absent facts \[12\].
+
+This configuration shows why learning should not be depicted as inevitably replacing rules or groups. A validated rule, an expert discussion and a statistical prediction address different requirements. Increasing computational capacity may broaden their use, but it does not settle disagreement or maintain an obsolete knowledge base. The feedback from wider use to maintenance work is plausible and clinically documented in later systems, rather than inferred solely from rule count \[15\].
+
+## Enterprise Integration, Warehouses, and OLAP
+
+When decisions span functions, records designed for local transactions can be inconsistent, distributed and unsuitable for repeated analysis. Chaudhuri and Dayal distinguish operational processing from analytical workloads and explain extraction, cleaning, integration, refreshing and metadata responsibilities \[16\]. In their 1997 account, analytical queries can scan millions of records where operational transactions touch far smaller sets. Those figures describe a historical workload distinction, not present-day capacity requirements.
+
+Larger storage and faster processing make extensive histories and interactive analytical queries more feasible. The architectural response separates analytical from operational work and supplies integrated representations. It also creates a substantive organizational task: defining shared entities, measures and update responsibilities. Thus integration can reduce inconsistency experienced by users while increasing the work required to maintain common meaning.
+
+The departmental-mart tradeoff makes the reverse pathway concrete. Local marts can accelerate deployment without organization-wide agreement, but uncoordinated development can create later integration problems \[16\]. More capability in one department need not lower the enterprise’s coordination burden. Conversely, common metadata and stable interfaces can contain that burden. Architecture may dampen or amplify complexity depending on boundaries and ownership, rather than invariably expanding it.
+
+## Distributed, Data-Dependent Prediction
+
+Data mining responds to situations in which collected observations exceed convenient manual interpretation. Fayyad *et al.* situate mining within a larger knowledge-discovery process involving goal understanding, selection, preparation, interpretation and iteration \[17\]. The organizational problem is transforming records into usable knowledge, not merely executing an algorithm on more rows.
+
+Distributed architectures address some scale constraints. MapReduce illustrates how a programming model and execution system can coordinate parallel work and failures across machines \[18\]. This is evidence for a processing mechanism, not direct proof that MapReduce caused a particular historical DSS transition. Hardware and architecture interact: more machines supply resources, while abstractions and failure management make those resources usable for suitable workloads.
+
+Prediction introduces further dependencies on training data, collection regimes, deployed components and monitoring. Sculley *et al.* describe hidden feedback, unstable data dependencies and undeclared consumers as technical-debt mechanisms \[19\]. Amershi *et al.* provide organizational evidence that ML engineering adds lifecycle tasks and interteam coordination \[6\]. These dependencies can shift the binding constraint from training throughput to data ownership, change management and collaboration. More sophisticated analytical capability can therefore create new work even when individual model performance improves.
+
+## Evidence-Linked and Adaptive Workflow Support
+
+More recent tools extend support across documents, knowledge sources, calculations and actions. Retrieval-augmented generation couples a language model to an external information store, motivated partly by knowledge access, updating and provenance \[20\]. Tool-interaction approaches such as ReAct interleave generated reasoning, actions and observations \[21\]. These are technical mechanisms within possible DSS arrangements, not independent evidence of a universally adopted autonomous generation.
+
+Selective retrieval can reduce the information presented to a user despite growth in the underlying collection. Tool delegation can move routine work into specialized components. However, evidence selection introduces access and provenance responsibilities; actions introduce dependencies on operational state and authorization. Repeated model calls may also move cost and latency to orchestration rather than eliminate them. Their organizational net effect cannot be inferred from NLP benchmark improvements.
+
+Established clinical DSS already demonstrate the importance of workflow fit, maintenance, alerts and interoperability \[15\]. This prevents treating current language-model interfaces as the first feedback-capable DSS. The relevant evolutionary question is whether an arrangement improves coordinated action while keeping observation, explanation and correction manageable. For recent generative and tool-using arrangements, evidence of long-term organization-level feedback is particularly limited in this corpus.
+
+
+
+**Table II. Historical comparison at the level of information-processing arrangements; configurations overlap, and dates are source anchors rather than adoption estimates**
+
+<span id="tab:history" label="tab:history"></span>
+
+| Configuration / source anchors                                                   | Organizational requirement and data relation                                     | Capacity and architectural response                                      | Possible transferred burden or balancing response                                              | Evidence boundary                                                                                |
+|:---------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
+| Interactive local models (1969–1971) \[7\], \[8\]                                | Semi-structured choices; suitable information may differ from operational detail | Short turnaround; model–data–dialogue linkage; what-if exploration       | Added detail can reduce usability; simple models and sampling reduce requirements              | Primary conceptual frameworks and prototype anecdotes                                            |
+| Codified/shared expertise (1977; 2002 synthesis) \[14\], \[3\]                   | Scarce/distributed expertise; ambiguity not reducible to volume                  | Knowledge representation, inference, collaboration and communication     | Rule maintenance and negotiated meaning; expertise reuse can reduce repeated interpretation    | Project descriptions and historical synthesis                                                    |
+| Enterprise analytical integration (1997; 2002) \[16\], \[3\]                     | Cross-functional decisions; heterogeneous histories and shared measures          | Workload separation, warehouse/OLAP, metadata and network access         | Local rollout can defer enterprise integration; shared semantics can stabilize it              | Architectural rationale, not a causal enterprise-impact estimate                                 |
+| Distributed data-dependent prediction (1996–2019) \[17\], \[18\], \[6\]          | Interpretation at scale; changing data, prediction and monitoring needs          | Discovery pipeline, distributed execution, model/data lifecycle          | Model/data coupling creates coordination; ownership and process maturity can contain it        | Technical studies plus bounded organizational case evidence                                      |
+| Evidence-linked/adaptive workflows (2020–2023 mechanisms) \[20\], \[21\], \[15\] | Distributed documents and linked decisions; current evidence and action context  | Retrieval, specialized tools, workflow integration and observation loops | Provenance, access, alert and execution obligations; selective presentation can save attention | Mechanisms and clinical synthesis; long-term generative-DSS organizational effects unestablished |
+
+
+
+# A Conditional Feedback Explanation
+
+## Demand and Processing: The Best-Supported Forward Links
+
+The first relationship is organizational interdependence or uncertainty increasing the work of obtaining and reconciling relevant information. This link has a well-developed theoretical basis \[1\], \[2\]. Data volume can add demand when records must be searched, integrated or monitored, as the warehouse and knowledge-discovery literature illustrates \[16\], \[17\]. Neither implies that every new record must be read by a person or that every difficult decision requires a larger dataset.
+
+A mismatch between requirements and usable capacity creates pressure for adaptation. The word pressure is deliberate: it does not guarantee investment, a particular architecture, or successful implementation. The response depends on cost, knowledge, authority and resources. Organizational redesign can reduce dependencies; selective data access can lower exposure; technical investment can increase throughput. The forward path is therefore conditional and branched, rather than a technological ladder.
+
+## The Observation Loop: Decisions Change the Data
+
+A distinct feedback mechanism arises when decisions influence which outcomes are observed. Perdomo *et al.* formalize prediction-dependent distributions and conditions under which repeated retraining can converge \[5\]. The mechanism is endogenous observation: a deployed decision policy changes the environment or behavior from which later data are generated. The result need not be a larger dataset. It can be a differently selected or distributed dataset of the same size.
+
+Chaney *et al.*’s recommender simulations show how interaction data shaped by recommendations can yield homogenization and confounded evaluation \[22\]. Ensign *et al.*’s formal and computational predictive-policing analysis distinguishes discovered incidents from resident-reported incidents: allocating observation effort changes which events become records \[23\]. The independence of reporting from deployment and its fidelity to underlying events are assumptions with acknowledged limits. These are mechanism demonstrations under specified assumptions, not field estimates that all recommendation or policing deployments produce the same effects.
+
+Consequently, a DSS can increase nominal observations while weakening their representativeness or coverage. Policy dependence does not imply that samples are statistically dependent: observations may be independent conditional on the deployed policy while their distribution changes with that policy. The organizational implication is a need to distinguish measured activity from underlying activity, document collection policies, and evaluate using information that is not entirely produced by the policy under evaluation. This is a synthesis of the studies, not a common intervention experimentally tested across them. Their stability and correction results also show why feedback should not be equated with runaway amplification.
+
+## The Coordination Loop: Capability Creates Dependencies
+
+Another pathway runs through shared analytical services and lifecycle work. When decisions depend on common schemas, features, models and interfaces, changes can cross team boundaries. Amershi *et al.* describe such dependencies within Microsoft; Sculley *et al.* explain associated engineering risks \[6\], \[19\]. Data marts provide an earlier architectural analogue: a locally useful expansion may defer integration obligations to a later enterprise stage \[16\].
+
+This supports a bounded reverse link from new processing arrangements to coordination demand. It does not directly establish an increase in total organizational complexity, because the new work may replace larger pre-existing burdens. A warehouse might add centralized maintenance while removing numerous manual reconciliations. A pipeline might create ownership work while reducing repeated debugging. The sign of the net effect requires observing both removed and added work at a specified organizational boundary.
+
+A further step, from improved DSS capability to an expanded organizational scope that creates new interdependencies and records, is plausible but less directly evidenced here. Shim *et al.* anticipate wider virtual and interorganizational arrangements \[3\]; those passages partly forecast possibilities rather than measure subsequent change. The full reinforcing historical loop is therefore presented as a conditional synthesis proposition, not an established causal finding.
+
+## Balancing Mechanisms and the Whole-Loop Boundary
+
+Figure 1 summarizes the pathways. It is a mechanism map, not a calibrated system-dynamics model: no loop gain, delay or growth rate is estimated. Solid arrows indicate relationships supported at the indicated theoretical, technical or organizational level. The dashed expansion link identifies the weakest step in closing a general reinforcing loop. A positive relationship under a condition is not a universal coefficient.
+
+Balancing mechanisms intervene at several points. Self-contained tasks and slack reduce coordination requirements \[1\]; sampling and simple models reduce unnecessary detail \[8\], \[7\]; filtering protects attention \[13\]; common semantics and explicit dependencies can contain integration work \[16\], \[19\]. Perdomo’s stability conditions and the corrective mechanisms studied by Chaney and Ensign further demonstrate that endogenous data need not lead to divergence \[5\], \[22\], \[23\].
+
+These mechanisms differ in cost. Reducing interdependence can sacrifice specialization; filtering can hide rare but consequential signals; shared definitions can constrain local flexibility; independent observations can require extra resources. The review therefore proposes neither unlimited integration nor universal simplification. The relevant criterion is fit between the information needed for a decision and the complete arrangement that makes action possible.
+
+![Figure 1: Conditional mechanism map separating organizational demand and data growth from endogenous observation feedback.](figures/feedback-map.png)
+
+*Evidence labels: T theory; H history; A architecture; E organizational cases; F formal analysis; S simulation; X cross-study conjecture. Arrows are conditional; the complete historical loop is not causally established.*
+
+# Cross-Level Illustrations and Critical Comparison
+
+## Enterprise Warehousing: Local Acceleration and Deferred Integration
+
+The warehouse case illustrates the same tension before machine learning. Departmental marts can provide timely analysis while avoiding the delay of enterprise-wide consensus. Their later integration may become difficult if local models diverge \[16\]. The short-run advantage is local autonomy and access; the possible long-run cost is reconciling definitions, histories and dependencies. The mechanism is deferred coordination, rather than a direct effect of record count alone.
+
+Shared enterprise architecture can dampen the loop by establishing common dimensions and responsibilities. Yet the source is a technical tutorial, not a longitudinal comparison estimating whether centralized or decentralized warehousing is organizationally superior. Its role is to identify an architecture-dependent mechanism and a rival pathway. A causal test would need the pre-existing reconciliation burden as well as new integration costs; measuring warehouse size or query latency alone would miss the proposed organizational effect.
+
+## Integrated Care: More Accessible Data, Persistent Situated Judgment
+
+Greenhalgh *et al.*’s NASSS research combines theory with six health/social-care technology cases, drawing on over 400 hours of observation, 165 interviews and 200 documents \[24\]. Its scope is wider than DSS, so transfer is clearest in the integrated-case-management example rather than every technology discussed. In that case, an organization introduced a warehouse with predictive risk modeling to identify people at high risk of hospital admission and facilitate shared care plans. Actual identification combined model outputs with clinical judgment; plans also circulated outside the warehouse.
+
+This directly illustrates the relationship between interdependent care, shared data and decision support. It also challenges the presumption that technical integration fully integrates work. Professionals still interpret priorities and communicate through situated channels. In the remote biomarker case, repeated measurements and alerts interact with staff engagement, patient understanding, connectivity and support work. The source does not quantify a growth trajectory in data volume or isolate a DSS-caused change in organization-wide complexity. It supports contextual adaptation and limits to technological substitution.
+
+Sutton *et al.*’s clinical DSS review provides a complementary secondary account of alert fatigue, fragmented workflows, changing knowledge bases and interoperability \[15\]. Alert overload is an attention-facing information problem, not the same measurement as archive size. Standardization and integration may help, while excessive low-value notifications can undermine use. The sources together show both benefits and burdens, without supporting a pooled effectiveness estimate or a rule that all monitoring increases complexity.
+
+## Production ML: New Capacity and Interteam Coupling
+
+Amershi *et al.*’s Microsoft study uses 14 interviews followed by 551 survey responses to investigate ML engineering practices \[6\]. It documents loops among collection, training, evaluation and monitoring, and additional challenges in collaboration and lifecycle support. In particular, changes to diagnostic data collection can require upstream engineering work; coupled model behavior can force separately organized teams to coordinate.
+
+This is actual organizational evidence for a reverse dependency pathway. However, the sample is self-selected and self-reported within one corporation, and it is not limited to applications labeled DSS. Its transfer concerns the production of data-dependent decision components, not a population-wide effect on managerial decisions. Maturing practices can also help teams manage the new work. Sculley’s engineering taxonomy explains why such burdens may be easy to overlook, but supplies no independent controlled estimate of their size \[19\].
+
+Across the cases, the consistent observation is redistribution of information work. Warehousing moves reconciliation into shared data infrastructure; integrated care combines formal data with professional coordination; ML introduces data/model lifecycle work across teams. The evidence is weaker for the stronger claim that total organizational complexity necessarily rises. Formal and simulated observation loops add a different result: the system can change the evidence it later consumes, even without an increase in organizational size or record volume. Combining these levels is useful only if those distinctions are retained.
+
+# Propositions and Design Implications
+
+The following propositions are derived from the synthesis, not newly tested empirical findings. Table III links the central relationships to evidence and limits.
+
+## P1: Misfit Depends on Interdependence and Meaning
+
+When task uncertainty or reciprocal interdependence increases beyond what existing plans and coordination arrangements can absorb, information-processing requirements rise; the appropriate response depends on whether the deficit concerns missing evidence, conflicting interpretation, or authority to act \[1\], \[2\], \[12\]. More records are more likely to help a well-specified missing-fact problem than unresolved equivocality. The proposition predicts that similar data volumes can produce different DSS demands across organizational contexts.
+
+The design implication is to diagnose the constraint before selecting an architecture. Search/aggregation may suit missing evidence; common definitions and discussion may suit conflicting meaning; decision-right clarification may be necessary where no component has authority. Treating all three as a storage or inference problem can produce a technically larger but organizationally less usable system.
+
+## P2: Coupling Moderates the Cost of Data Expansion
+
+When expanded data and model use introduces cross-unit dependencies faster than interfaces, ownership and maintenance practices stabilize them, additional analytical capacity can increase coordination work \[16\], \[6\], \[19\]. This is an additional-work proposition with an undetermined net effect, not a claim that all integration is harmful. Stable semantics and boundaries may remove more reconciliation than they create.
+
+The implication is to assess what new work is created, who performs it, and which existing work disappears. Change-impact analysis should include data consumers, collection regimes and model dependencies, alongside code modules. Query response time and model accuracy alone cannot reveal this balance.
+
+## P3: More Records Need Not Mean Less Biased Evidence
+
+When a DSS affects allocation or user behavior, subsequent observations are partly policy-dependent. Additional records may reinforce selection effects or make evaluation on similarly generated data misleading \[5\], \[22\], \[23\]. The sign and magnitude depend on sensitivity, external observations and correction mechanisms; the formal/simulation evidence does not establish a universal field effect.
+
+The implication is to record the policy and context of collection, separate observed from underlying activity, and seek appropriately independent or policy-aware evaluation. Monitoring data volume without monitoring the observation process can miss the principal feedback risk. There can also be stable adaptation, so a detected loop should trigger investigation rather than an automatic prediction of instability.
+
+## P4: Selectivity Can Improve Support While Reducing Exposure
+
+Where irrelevant detail or low-value, redundant notifications dominate recipient attention, filtering, sampling, understandable models and selective retrieval can increase usable capacity without increasing human information exposure \[13\], \[7\], \[8\], \[20\]. The proposition connects older attention/model-design arguments to current access mechanisms; it does not imply that retrieval automatically makes an answer correct or preserves every important exception.
+
+The implication is to distinguish archive growth from interface burden. A larger searchable corpus can coexist with concise presentation; conversely, a modest database can generate an overwhelming notification stream. Evaluation should check missed consequential signals and the costs of selection alongside time saved.
+
+## P5: Scope Expansion Closes a Reinforcing Loop Only Conditionally
+
+If improved support enables additional products, partners or delegated decisions that introduce new interdependencies and recording requirements, a reinforcing demand–capacity–scope loop may emerge. The reviewed historical forecasts and bounded coordination evidence make this plausible, but no included study directly tests the complete long-run loop \[3\], \[6\]. Expansion is therefore a conjectural closure, not the principal established result.
+
+The implication is to specify the organizational boundary and compare expansion with plausible alternatives. A system may instead stabilize operations, substitute for existing coordination, support downsizing or be abandoned. Successful deployment does not itself demonstrate growth in complexity; failure does not demonstrate absence of the underlying demand.
+
+
+
+**Table III. Evidence-to-mechanism map: support is link-specific, not proof of the full historical loop**
+
+<span id="tab:claims" label="tab:claims"></span>
+
+| Relationship                                                  | Assessed support and locations                                                                      | Evidence type                                 | Main boundary / countercondition                                                                            |
+|:--------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|:----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
+| Interdependence/uncertainty increases processing requirements | Galbraith, pp.28–32; Tushman/Nadler, pp.615–617 \[1\], \[2\]                                        | Organizational theory                         | Reduce interdependence or use slack; not a byte-growth law                                                  |
+| Data growth can strain integration/interpretation             | Chaudhuri/Dayal, pp.65–67; Fayyad *et al.*, pp.37–42 \[16\], \[17\]                                 | Architecture and process synthesis            | Selection, semantics and workload matter; no universal causal effect size                                   |
+| Data-dependent capability creates lifecycle coordination      | Amershi *et al.*, PDF pp.8–9; Sculley *et al.*, Secs.2–4 \[6\], \[19\]                              | Organizational case plus engineering analysis | Single-organization/self-report limits; added work may replace existing work                                |
+| Decision policies change future observations                  | Perdomo *et al.*, Secs.2–4; Chaney *et al.*, Sec.5; Ensign *et al.*, Secs.3–5 \[5\], \[22\], \[23\] | Formal analysis and simulation                | Selection/distribution change is not necessarily volume or complexity growth; stability/correction possible |
+| Abstraction and selection can reduce burden                   | Gorry/Scott Morton, scan p.25; Simon, pp.40–46; Little, scan pp.15–23 \[8\], \[13\], \[7\]          | Conceptual/design evidence                    | Over-filtering can omit relevant exceptions; benefit is decision-specific                                   |
+| Capability-enabled scope expansion closes a reinforcing loop  | Shim *et al.*, pp.113,122; integration with bounded coordination findings \[3\], \[6\]              | Historical forecast and review synthesis      | Whole-loop conjecture; no included longitudinal test establishes general historical closure                 |
+
+
+
+# Rival Explanations and Research Agenda
+
+## Common Causes and Alternative Trajectories
+
+Co-occurrence of more complex work, more data and newer DSS is insufficient to infer the proposed feedback. Environmental change, digitization, regulation or changes in organizational scope could produce all three. Resources and managerial priorities could drive both technology investment and restructuring. These alternatives are not estimated in this review; they define what a causal study would need to distinguish.
+
+Reverse causality also requires care. A complex organization may invest in analytics, while analytics may permit coordination at greater scope. Observing the second after the first does not identify the relative contribution. Furthermore, organizational complexity can be relocated: outsourcing a data service may simplify one unit’s workflow while increasing interorganizational dependencies. A stable enterprise total can conceal shifts across departments or external partners.
+
+Other trajectories directly challenge a monotonic narrative. Standardization can reduce variety; modularity can reduce reciprocal dependencies; learning can routinize exceptions; budget constraints can prevent collection or investment. Clinical implementation evidence includes workarounds, nonadoption and abandonment, not just successful expansion \[24\]. A review centered only on growing systems would miss these cases and overstate technological inevitability.
+
+## Operationalizing the Relationships
+
+Future studies should measure the constructs separately. Data volume could use observations per decision window or archive size, with duplication and collection-policy changes recorded. Data variety could use source/schema diversity; attention exposure could use alerts or items inspected per decision. Organizational interdependence could be assessed through cross-unit handoffs, reciprocal dependencies and escalation paths. Equivocality would require evidence of competing interpretations, not simply prediction variance. These are proposed measurement options, not validated instruments supplied by this review.
+
+Usable capacity should be examined through the time and work needed for a correct coordinated action, including validation and maintenance. Candidate outcomes include decision timeliness, errors relative to specified objectives, reconciliation work, change-impact scope and ability to correct the system. Human and infrastructure costs should be reported separately. No single accuracy or latency number captures all these dimensions.
+
+Longitudinal comparative cases are particularly suitable for tracing when information requirements changed, when a support arrangement changed, and which dependencies were removed or created. Variation in rollout timing may help compare similar organizational units, but identification requires examining prior trends and concurrent changes. Qualitative process tracing can reveal selection and interpretation mechanisms even where a credible numerical causal estimate is unavailable.
+
+For the endogenous-observation loop, studies should track whether data arose independently or through the policy’s allocation and presentation decisions. Formal stability results motivate testing sensitivity and correction conditions, not assuming that a simulated result will transfer unchanged. For the scope-expansion conjecture, evidence would need to show that new DSS capability actually enabled activities that then generated additional interdependencies; simple temporal succession is inadequate.
+
+## Testing Whether Scaling or Redesign Helps
+
+An evaluation can compare increased resources within the same design with an alternative representation or coordination arrangement at a transparent cost. This need not require matched budgets in every historical case, but resource and workflow changes should be reported. A warehouse redesign may reduce repeated reconciliation without reducing raw records. A selective interface may reduce attention exposure while retaining archive coverage. A decision-right change may resolve a bottleneck that neither extra storage nor a larger model can address.
+
+The key discriminator is what constraint changed and which outcome followed. Cross-sectional comparisons of newer versus older systems confound architecture, organizational maturity, resources and selection. Carefully documented failures and simplifications are as informative as successful expansions because they test the conditions under which the proposed loops do not close.
 
 # Limitations
 
-This review is limited by its repository-based, purposive corpus and
-partial extraction rather than exhaustive full-document assessment. It
-does not reconstruct a complete history of operations research,
-databases, human–computer interaction, or organizational decision
-theory. The period labels are heuristic. No adoption dataset or
-controlled historical comparison establishes the relative causal
-contribution of hardware, algorithms, and institutions. Technical
-benchmark papers often concern language or prediction tasks rather than
-deployed organizational decisions. The review therefore treats their
-relevance to DSS as a reasoned architectural connection, not direct
-proof of decision improvement. Recent work also changes rapidly; the
-catalog’s 2026 coverage is not a verified state-of-the-art frontier.
-Publication-specific IEEE requirements and final author declarations
-require review before submission.
+The review is purposive and access-dependent, with a bounded English-language corpus and targeted search routes. Important candidates remained inaccessible, including several classic DSS papers, business-intelligence reviews and information-overload work; the supplement records those omissions. The initial catalog and exact-title discovery can favor familiar sources. No claim of exhaustive theoretical or historical coverage is made. Reading full-text mechanisms and checking metadata reduces, but does not remove, extraction error; OCR and AI-assisted synthesis introduce additional risks.
+
+The evidence is heterogeneous and uneven across links. Core organizational theories are conceptual; historical sources combine descriptions, examples and forecasts; recent feedback sources are often mathematical or simulated. The strongest organizational examples concern healthcare and production ML, rather than representative samples of all DSS. Generalizing across sector, scale, institutional setting and organizational boundary remains an analytical judgment. The source roles and tables make that judgment inspectable but do not validate it empirically.
+
+The framework does not estimate time delays, net complexity changes, historical adoption rates or comparative effect sizes. It cannot identify the dominant cause of each transition or establish the complete feedback loop. Recent generative/tool-using systems provide mechanism examples with limited long-term organizational evidence here. Finally, identifying close prior reviews does not establish exhaustive novelty. The proposed contribution is the conditional integration and explicit evidence boundary, which remains open to scholarly challenge.
 
 # Conclusion
 
-DSS evolve when existing representations, evidence flows, or interaction
-arrangements no longer meet decision requirements and new computational
-resources make alternative designs feasible. Computing capacity enables
-larger and faster workloads; architectures determine how that capacity
-contributes to knowledge, prediction, interaction, or action. The
-history is consequently an overlap of model-based reasoning, explicit
-expertise, preference modeling, shared data, learning, and
-orchestration. Recent assistants and agents extend this history while
-retaining its central unresolved problem: connecting technically capable
-systems to valid, accountable decisions. Selecting the next architecture
-should begin with the current bottleneck and an explicit decision
-objective, followed by evidence that the change improves outcomes under
-realistic resource and governance constraints.
+The evolution of DSS can be understood as repeated adaptation of information-processing arrangements to changing organizational requirements and data conditions. Interdependence and uncertainty create processing demands; growing data can increase integration and interpretation work; technical and organizational responses can expand usable capacity or reduce the demands themselves. Architectures matter because they redistribute work across models, stores, interfaces, people and organizational boundaries.
 
-# Draft and AI Assistance Disclosure
+Feedback adds two supported qualifications to a simple progress narrative. Decision policies can alter future observations, and data-dependent systems can introduce new coordination and lifecycle obligations. Neither result means that more records inevitably create greater organizational complexity. Sampling, abstraction, shared meaning, modularity and corrective observation can balance the relationship. The stronger claim that DSS-enabled expansion closes a self-reinforcing historical loop remains conditional and incompletely tested.
 
-This unattributed manuscript was drafted with AI assistance using the
-accompanying repository corpus. It has not undergone independent
-scholarly peer review. The submitting author should verify every
-reference and claim, supply authorship and affiliation information, and
-adapt the disclosure and formatting to the selected IEEE venue’s current
-requirements. No new experiments or human-subject study are reported.
+A defensible design strategy therefore begins by identifying whether the constraint concerns missing evidence, interpretation, attention, throughput or coordinated action. Scaling, redesign and simplification are alternative responses whose value depends on those conditions. This review offers an evidence-linked framework for investigating that choice, rather than a universal technological sequence or a measured law of organizational growth.
+
+# AI Assistance and Authorship
+
+Literature discovery, text extraction, synthesis checking, manuscript drafting and document preparation were assisted by AI tools. The manuscript remains unattributed as requested; it reports no new experiments or human-participant data collection. Responsibility for submission, authorship, source verification and the selected venue’s disclosure requirements rests with the eventual human authors.
 
 # References
 
 \[1\]  
-J. P. Shim, M. Warkentin, J. F. Courtney, D. J. Power, R. Sharda, and C.
-Carlsson, “Past, Present, and Future of Decision Support Technology,”
-Decision Support Systems, vol. 33, pp. 111–126, 2002. \[Online\].
-Available: <https://scholarworks.uni.edu/facpub/3462/>
+J. R. Galbraith, “Organization Design: An Information Processing View,” *Interfaces*, vol. 4, no. 3, pp. 28–36, 1974, doi: 10.1287/inte.4.3.28. \[Online\]. Available: <https://doi.org/10.1287/inte.4.3.28>
 
 \[2\]  
-D. J. Power, “Specifying an Expanded Framework for Classifying and
-Describing Decision Support Systems,” Communications of the Association
-for Information Systems, vol. 13, art. 13, pp. 158–166, 2004, doi:
-10.17705/1CAIS.01313. \[Online\]. Available:
-<https://aisel.aisnet.org/cais/vol13/iss1/13/>
+M. L. Tushman and D. A. Nadler, “Information Processing as an Integrating Concept in Organizational Design,” *Academy of Management Review*, vol. 3, no. 3, pp. 613–624, 1978, doi: 10.5465/amr.1978.4305791. \[Online\]. Available: <https://doi.org/10.5465/amr.1978.4305791>
 
 \[3\]  
-E. A. Feigenbaum, “The Art of Artificial Intelligence: Themes and Case
-Studies of Knowledge Engineering,” in Proc. IJCAI, 1977. \[Online\].
-Available: <https://www.ijcai.org/proceedings/1977/>
+J. P. Shim, M. Warkentin, J. F. Courtney, D. J. Power, R. Sharda and C. Carlsson, “Past, Present, and Future of Decision Support Technology,” *Decision Support Systems*, vol. 33, no. 2, pp. 111–126, 2002, doi: 10.1016/S0167-9236(01)00139-7. \[Online\]. Available: <https://scholarworks.uni.edu/facpub/3462/>
 
 \[4\]  
-S.-H. Liao, “Expert System Methodologies and Applications: A Decade
-Review from 1995 to 2004,” Expert Systems with Applications, vol. 28,
-pp. 93–103, 2005, doi: 10.1016/j.eswa.2004.08.003. \[Online\].
-Available: <https://doi.org/10.1016/j.eswa.2004.08.003>
+D. J. Power, “Specifying an Expanded Framework for Classifying and Describing Decision Support Systems,” *Communications of the Association for Information Systems*, vol. 13, pp. 158–166, 2004, doi: 10.17705/1CAIS.01313. \[Online\]. Available: <https://aisel.aisnet.org/cais/vol13/iss1/13/>
 
 \[5\]  
-J.-P. Brans and P. Vincke, “Note—A Preference Ranking Organisation
-Method,” Management Science, vol. 31, no. 6, pp. 647–656, 1985, doi:
-10.1287/mnsc.31.6.647. \[Online\]. Available:
-<https://doi.org/10.1287/mnsc.31.6.647>
+J. C. Perdomo, T. Zrnic, C. Mendler-Dünner and M. Hardt, “Performative Prediction,” in *Proceedings of the 37th International Conference on Machine Learning*, Proceedings of Machine Learning Research, vol. 119, pp. 7599–7609, 2020. \[Online\]. Available: <https://proceedings.mlr.press/v119/perdomo20a.html>
 
 \[6\]  
-E. Hüllermeier and R. Słowiński, “Preference Learning and Multiple
-Criteria Decision Aiding: Differences, Commonalities, and Synergies—Part
-I,” 4OR, vol. 22, pp. 179–209, 2024, doi: 10.1007/s10288-023-00560-6.
-\[Online\]. Available:
-<https://link.springer.com/article/10.1007/s10288-023-00560-6>
+S. Amershi *et al.*, “Software Engineering for Machine Learning: A Case Study,” in *2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)*, pp. 291–300, 2019, doi: 10.1109/ICSE-SEIP.2019.00042. \[Online\]. Available: <https://doi.org/10.1109/ICSE-SEIP.2019.00042>
 
 \[7\]  
-S. Chaudhuri and U. Dayal, “An Overview of Data Warehousing and OLAP
-Technology,” ACM SIGMOD Record, vol. 26, no. 1, pp. 65–74, 1997.
-\[Online\]. Available:
-<https://sigmodrecord.org/1997/03/15/an-overview-of-data-warehousing-and-olap-technology/>
+J. D. C. Little, “Models and Managers: The Concept of a Decision Calculus,” MIT Sloan School of Management Working Paper, Rep. 403-69, June 1969. \[Online\]. Available: <https://archive.org/details/modelsmanagersco00litt>
 
 \[8\]  
-U. Fayyad, G. Piatetsky-Shapiro, and P. Smyth, “From Data Mining to
-Knowledge Discovery in Databases,” AI Magazine, vol. 17, no. 3, pp.
-37–54, 1996. \[Online\]. Available:
-<https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230>
+G. A. Gorry and M. S. Scott Morton, “A Framework for Management Information Systems,” MIT Sloan School of Management Working Paper, Rep. 510-71, February 1971. \[Online\]. Available: <https://archive.org/details/frameworkformana00gorr>
 
 \[9\]  
-J. Dean and S. Ghemawat, “MapReduce: Simplified Data Processing on Large
-Clusters,” in Proc. OSDI, 2004, pp. 137–150. \[Online\]. Available:
-<https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/>
+D. Arnott and G. Pervan, “Eight Key Issues for the Decision Support Systems Discipline,” *Decision Support Systems*, vol. 44, pp. 657–672, 2008, doi: 10.1016/j.dss.2007.09.003. \[Online\]. Available: <https://www.sciencedirect.com/science/article/pii/S0167923607001698>
 
 \[10\]  
-L. Breiman, “Random Forests,” Machine Learning, vol. 45, pp. 5–32, 2001,
-doi: 10.1023/A:1010933404324. \[Online\]. Available:
-<https://link.springer.com/article/10.1023/A:1010933404324>
+F. A. Budianto, M. Lubis, I. Y. Mukti and S. Budianto, “The Evolution of Decision Support Systems (DSS) to Strategic AI: A Systematic Review of Architectural Shifts and Business Value,” *RIGGS: Journal of Artificial Intelligence and Digital Business*, vol. 5, no. 1, pp. 8905–8916, 2026, doi: 10.31004/riggs.v5i1.6990. \[Online\]. Available: <https://journal.ilmudata.co.id/index.php/RIGGS/article/download/6990/5330>
 
 \[11\]  
-M. I. Jordan and T. M. Mitchell, “Machine Learning: Trends,
-Perspectives, and Prospects,” Science, vol. 349, no. 6245, pp. 255–260,
-2015, doi: 10.1126/science.aaa8415. \[Online\]. Available:
-<https://doi.org/10.1126/science.aaa8415>
+E. J. Eze, F. M. Bello and O. T. Akinyemi, “Decision Support Systems: Evolution, Architectures, Applications, and Future Directions,” *Data Intelligence and Informatics Practice*, vol. 1, no. 1, pp. 19–31, 2026, doi: 10.53623/diip.v1i1.1264. \[Online\]. Available: <https://tecnoscientifica.com/journal/diip/article/download/1264/626>
 
 \[12\]  
-Y. LeCun, Y. Bengio, and G. Hinton, “Deep Learning,” Nature, vol. 521,
-pp. 436–444, 2015, doi: 10.1038/nature14539. \[Online\]. Available:
-<https://doi.org/10.1038/nature14539>
+R. L. Daft and R. H. Lengel, “Organizational Information Requirements, Media Richness and Structural Design,” *Management Science*, vol. 32, no. 5, pp. 554–571, 1986, doi: 10.1287/mnsc.32.5.554. \[Online\]. Available: <https://doi.org/10.1287/mnsc.32.5.554>
 
 \[13\]  
-M. T. Ribeiro, S. Singh, and C. Guestrin, “Why Should I Trust You?
-Explaining the Predictions of Any Classifier,” arXiv:1602.04938, 2016.
-\[Online\]. Available: <https://arxiv.org/abs/1602.04938>
+H. A. Simon, “Designing Organizations for an Information-Rich World,” in *Computers, Communications, and the Public Interest*, M. Greenberger, Ed. Baltimore, MD, USA: The Johns Hopkins Press, 1971, pp. 37–72. \[Online\]. Available: <https://digitalcollections.library.cmu.edu/awweb/awarchive?type=file&item=33748>
 
 \[14\]  
-S. M. Lundberg and S.-I. Lee, “A Unified Approach to Interpreting Model
-Predictions,” arXiv:1705.07874, 2017. \[Online\]. Available:
-<https://arxiv.org/abs/1705.07874>
+E. A. Feigenbaum, “The Art of Artificial Intelligence: Themes and Case Studies of Knowledge Engineering,” in *Proceedings of the Fifth International Joint Conference on Artificial Intelligence*, pp. 1014–1029, 1977. \[Online\]. Available: <https://www.ijcai.org/proceedings/1977/>
 
 \[15\]  
-A. Vaswani et al., “Attention Is All You Need,” arXiv:1706.03762, 2017.
-\[Online\]. Available: <https://arxiv.org/abs/1706.03762>
+R. T. Sutton, D. Pincock, D. C. Baumgart, D. C. Sadowski, R. N. Fedorak and K. I. Kroeker, “An overview of clinical decision support systems: benefits, risks, and strategies for success,” *npj Digital Medicine*, vol. 3, Art. no. 17, 2020, doi: 10.1038/s41746-020-0221-y. \[Online\]. Available: <https://www.nature.com/articles/s41746-020-0221-y>
 
 \[16\]  
-T. B. Brown et al., “Language Models Are Few-Shot Learners,”
-arXiv:2005.14165, 2020. \[Online\]. Available:
-<https://arxiv.org/abs/2005.14165>
+S. Chaudhuri and U. Dayal, “An Overview of Data Warehousing and OLAP Technology,” *ACM SIGMOD Record*, vol. 26, no. 1, pp. 65–74, 1997, doi: 10.1145/248603.248616. \[Online\]. Available: <https://sigmodrecord.org/1997/03/15/an-overview-of-data-warehousing-and-olap-technology/>
 
 \[17\]  
-J. Wei et al., “Chain-of-Thought Prompting Elicits Reasoning in Large
-Language Models,” arXiv:2201.11903, 2022. \[Online\]. Available:
-<https://arxiv.org/abs/2201.11903>
+U. Fayyad, G. Piatetsky-Shapiro and P. Smyth, “From Data Mining to Knowledge Discovery in Databases,” *AI Magazine*, vol. 17, no. 3, pp. 37–54, 1996, doi: 10.1609/aimag.v17i3.1230. \[Online\]. Available: <https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1230>
 
 \[18\]  
-P. Lewis et al., “Retrieval-Augmented Generation for Knowledge-Intensive
-NLP Tasks,” arXiv:2005.11401, 2020. \[Online\]. Available:
-<https://arxiv.org/abs/2005.11401>
+J. Dean and S. Ghemawat, “MapReduce: Simplified Data Processing on Large Clusters,” in *Proceedings of the 6th Symposium on Operating Systems Design and Implementation*, 2004. \[Online\]. Available: <https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/>
 
 \[19\]  
-S. Yao et al., “ReAct: Synergizing Reasoning and Acting in Language
-Models,” in Proc. ICLR, 2023, arXiv:2210.03629. \[Online\]. Available:
-<https://arxiv.org/abs/2210.03629>
+D. Sculley *et al.*, “Hidden Technical Debt in Machine Learning Systems,” *Advances in Neural Information Processing Systems*, vol. 28, 2015. \[Online\]. Available: <https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html>
 
 \[20\]  
-T. Schick et al., “Toolformer: Language Models Can Teach Themselves to
-Use Tools,” arXiv:2302.04761, 2023. \[Online\]. Available:
-<https://arxiv.org/abs/2302.04761>
+P. Lewis *et al.*, “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,” *arXiv:2005.11401*, 2020. \[Online\]. Available: <https://arxiv.org/abs/2005.11401>
 
 \[21\]  
-Q. Wu et al., “AutoGen: Enabling Next-Gen LLM Applications via
-Multi-Agent Conversation,” arXiv:2308.08155, 2023. \[Online\].
-Available: <https://arxiv.org/abs/2308.08155>
+S. Yao *et al.*, “ReAct: Synergizing Reasoning and Acting in Language Models,” in *Proceedings of the International Conference on Learning Representations*, 2023. \[Online\]. Available: <https://arxiv.org/abs/2210.03629>
 
 \[22\]  
-A. Madaan et al., “Self-Refine: Iterative Refinement with
-Self-Feedback,” arXiv:2303.17651, 2023. \[Online\]. Available:
-<https://arxiv.org/abs/2303.17651>
+A. J. B. Chaney, B. M. Stewart and B. E. Engelhardt, “How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility,” in *Proceedings of the 12th ACM Conference on Recommender Systems*, pp. 224–232, 2018, doi: 10.1145/3240323.3240370. \[Online\]. Available: <https://doi.org/10.1145/3240323.3240370>
 
 \[23\]  
-K. Valmeekam, S. Sreedharan, M. Marquez, A. Olmo, and S. Kambhampati,
-“On the Planning Abilities of Large Language Models (A Critical
-Investigation with a Proposed Benchmark),” arXiv:2302.06706, 2023.
-\[Online\]. Available: <https://arxiv.org/abs/2302.06706>
+D. Ensign, S. A. Friedler, S. Neville, C. Scheidegger and S. Venkatasubramanian, “Runaway Feedback Loops in Predictive Policing,” in *Proceedings of the 1st Conference on Fairness, Accountability and Transparency*, Proceedings of Machine Learning Research, vol. 81, pp. 160–171, 2018. \[Online\]. Available: <https://proceedings.mlr.press/v81/ensign18a.html>
 
 \[24\]  
-D. Arnott and G. Pervan, “Eight Key Issues for the Decision Support
-Systems Discipline,” Decision Support Systems, vol. 44, pp.
-657–672, 2008. \[Online\]. Available:
-<https://www.sciencedirect.com/science/article/pii/S0167923607001698>
+T. Greenhalgh *et al.*, “Beyond Adoption: A New Framework for Theorizing and Evaluating Nonadoption, Abandonment, and Challenges to the Scale-Up, Spread, and Sustainability of Health and Care Technologies,” *Journal of Medical Internet Research*, vol. 19, no. 11, Art. no. e367, 2017, doi: 10.2196/jmir.8775. \[Online\]. Available: <https://www.jmir.org/2017/11/e367/>

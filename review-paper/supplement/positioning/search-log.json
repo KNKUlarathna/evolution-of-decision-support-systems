@@ -1,0 +1,1026 @@
+[
+  {
+    "date": "2026-10-21",
+    "kind": "metadata_search",
+    "provider": "Crossref",
+    "query": "decision support systems evolution organizational complexity data feedback review",
+    "url": "https://api.crossref.org/works?rows=6&query.title=decision%20support%20systems%20evolution%20organizational%20complexity%20data%20feedback%20review",
+    "status": "success",
+    "returned": 6,
+    "results": [
+      {
+        "title": [
+          "Organizational decision support systems"
+        ],
+        "DOI": "10.1016/0377-2217(89)90497-9",
+        "author": null,
+        "published": {
+          "date-parts": [
+            [
+              1989,
+              1
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:0377221789904979?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:0377221789904979?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Organizational decision support systems"
+        ],
+        "DOI": "10.1016/0020-7373(92)90074-u",
+        "author": [
+          {
+            "given": "Varghese S.",
+            "family": "Jacob",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Hasan",
+            "family": "Pirkul",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1992,
+              6
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:002073739290074U?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:002073739290074U?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Organizational Support for Decision Support Systems"
+        ],
+        "DOI": "10.1080/07421222.1989.11517841",
+        "author": [
+          {
+            "given": "Hugh J.",
+            "family": "Watson",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Astrid",
+            "family": "Lipp",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Pamela Z.",
+            "family": "Jackson",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Abdelhafid",
+            "family": "Dahmani",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "William B.",
+            "family": "Fredenberger",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1989,
+              3
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://www.tandfonline.com/doi/pdf/10.1080/07421222.1989.11517841",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Management Decision Support Systems.",
+          "Decision Support Systems: An Organizational Perspective."
+        ],
+        "DOI": "10.2307/2392463",
+        "author": [
+          {
+            "given": "Jack William",
+            "family": "Jones",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew M.",
+            "family": "McCosh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Michael S. Scott",
+            "family": "Morton",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Peter G.",
+            "family": "Keen",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1980,
+              6
+            ]
+          ]
+        },
+        "link": null
+      },
+      {
+        "title": [
+          "Integrating Big Data Technology Into Organizational Decision Support Systems"
+        ],
+        "DOI": "10.4018/978-1-7998-9023-2.ch031",
+        "author": [
+          {
+            "given": "Ahmad M.",
+            "family": "Kabil",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin-Whitewater, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=282609",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Integrating Big Data Technology Into Organizational Decision Support Systems"
+        ],
+        "DOI": "10.4018/978-1-7998-3473-1.ch078",
+        "author": [
+          {
+            "given": "Ahmad M.",
+            "family": "Kabil",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "University of Wisconsin-Whitewater, USA"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://www.igi-global.com/viewtitle.aspx?TitleId=263604",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "metadata_search",
+    "provider": "Crossref",
+    "query": "Information overload in organizations review Eppler Mengis",
+    "url": "https://api.crossref.org/works?rows=6&query.title=Information%20overload%20in%20organizations%20review%20Eppler%20Mengis",
+    "status": "success",
+    "returned": 6,
+    "results": [
+      {
+        "title": [
+          "Review of Mengis et al."
+        ],
+        "DOI": "10.5194/gmd-2019-373-rc1",
+        "author": null,
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              3,
+              15
+            ]
+          ]
+        },
+        "link": null
+      },
+      {
+        "title": [
+          "Information overload in business organizations and entrepreneurship: An analytical review of the literature"
+        ],
+        "DOI": "10.1177/02663821211054975",
+        "author": [
+          {
+            "given": "CA(Dr.) Gaurav",
+            "family": "Bhambri",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Director of Asian Pacific Institute of Information & Technology, New Delhi, India"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              26
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/02663821211054975",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/02663821211054975",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/02663821211054975",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Review of Mengis et al., UVic 2.10"
+        ],
+        "DOI": "10.5194/gmd-2019-373-rc2",
+        "author": null,
+        "published": {
+          "date-parts": [
+            [
+              2020,
+              3,
+              24
+            ]
+          ]
+        },
+        "link": null
+      },
+      {
+        "title": [
+          "Individuals and information overload in organizations: is more necessarily better?"
+        ],
+        "DOI": "10.1016/0024-6301(81)90222-3",
+        "author": null,
+        "published": {
+          "date-parts": [
+            [
+              1981,
+              6
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:0024630181902223?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:0024630181902223?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Individuals and Information Overload in Organizations: Is More Necessarily Better?"
+        ],
+        "DOI": "10.2307/255556",
+        "author": [
+          {
+            "given": "C. A.",
+            "family": "O'Reilly",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1980,
+              12,
+              1
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://journals.aom.org/doi/10.5465/255556",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Information Overload: A Systematic Literature Review"
+        ],
+        "DOI": "10.1007/978-3-319-11370-8_6",
+        "author": [
+          {
+            "given": "Peter",
+            "family": "Melinat",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Tolja",
+            "family": "Kreuzkam",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Dirk",
+            "family": "Stamer",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2014
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "http://link.springer.com/content/pdf/10.1007/978-3-319-11370-8_6",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "metadata_search",
+    "provider": "Crossref",
+    "query": "decision support systems evolution architectures applications future directions",
+    "url": "https://api.crossref.org/works?rows=6&query.title=decision%20support%20systems%20evolution%20architectures%20applications%20future%20directions",
+    "status": "success",
+    "returned": 6,
+    "results": [
+      {
+        "title": [
+          "Decision Support Systems: Evolution, Architectures, Applications, and Future Directions"
+        ],
+        "DOI": "10.53623/diip.v1i1.1264",
+        "author": [
+          {
+            "given": "Emeka J.",
+            "family": "Eze",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Fatima M.",
+            "family": "Bello",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Olusegun T.",
+            "family": "Akinyemi",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              4
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://tecnoscientifica.com/journal/diip/article/download/1264/626",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://tecnoscientifica.com/journal/diip/article/download/1264/626",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Decision Support Systems in Neurosurgery: Current Applications and Future Directions"
+        ],
+        "DOI": "10.3390/s25247415",
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-5239-1635",
+            "authenticated-orcid": false,
+            "given": "Mateusz",
+            "family": "Koryci\u0144ski",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Control and Computation Engineering, Warsaw University of Technology, Nowowiejska 15/19, 00-665 Warsaw, Poland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-2471-3016",
+            "authenticated-orcid": false,
+            "given": "Konrad A.",
+            "family": "Ciecierski",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Control and Computation Engineering, Warsaw University of Technology, Nowowiejska 15/19, 00-665 Warsaw, Poland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4782-3816",
+            "authenticated-orcid": false,
+            "given": "Ewa",
+            "family": "Niewiadomska-Szynkiewicz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Institute of Control and Computation Engineering, Warsaw University of Technology, Nowowiejska 15/19, 00-665 Warsaw, Poland"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              5
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://www.mdpi.com/1424-8220/25/24/7415/pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "FUTURE DIRECTIONS FOR DEVELOPING DECISION SUPPORT SYSTEMS*"
+        ],
+        "DOI": "10.1111/j.1540-5915.1980.tb01165.x",
+        "author": [
+          {
+            "given": "Robert H.",
+            "family": "Bonczek",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Clyde W.",
+            "family": "Holsapple",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Andrew B.",
+            "family": "Whinston",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1980,
+              10
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fj.1540-5915.1980.tb01165.x",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1540-5915.1980.tb01165.x",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "AI-Powered Clinical Decision Support Systems (CDSS): Challenges, Benefits, Applications, and Future Directions"
+        ],
+        "DOI": "10.1109/icmlas64557.2025.10969014",
+        "author": [
+          {
+            "given": "Prajyot",
+            "family": "Yesankar",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Datta Meghe Institute of Higher Education and Research (DU),Faculty of Engineering and Technology,Department of Computer Science and Design,Wardha,Maharashtra,India,442001"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Chetan",
+            "family": "Puri",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Datta Meghe Institute of Higher Education and Research (DU),Faculty of Engineering and Technology,Department of Computer Science and Design,Wardha,Maharashtra,India,442001"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Pradnyawant M.",
+            "family": "Gote",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Datta Meghe Institute of Higher Education and Research (DU),Faculty of Engineering and Technology,Department of Computer Science and Design,Wardha,Maharashtra,India,442001"
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              10
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/10967566/10967584/10969014.pdf?arnumber=10969014",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      },
+      {
+        "title": [
+          "Future Directions for Decision Support."
+        ],
+        "DOI": "10.21236/ada087355",
+        "author": [
+          {
+            "given": "Robert H.",
+            "family": "Bonczek",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Clyde W.",
+            "family": "Holsapple",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Andrew B.",
+            "family": "Whinston",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1980,
+              6,
+              1
+            ]
+          ]
+        },
+        "link": null
+      },
+      {
+        "title": [
+          "Evolution and Future of Decision Support Systems: Frameworks, Applications, and Emerging Trends"
+        ],
+        "DOI": "10.1109/icosec67334.2025.11459772",
+        "author": [
+          {
+            "given": "Siva Subramanian",
+            "family": "R",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Institute of Science and Technology,ept of CSE SRM,Trichy"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "K.",
+            "family": "Ramesh",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Panimalar Engineering College,Department of IT,Chennai"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "P.Ruba",
+            "family": "Sudha",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "S.A Engineering College,Dept of CSE"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Nagarajan",
+            "family": "S",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "R.M.K.Engineering College,Dept of IT"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "family": "D.Lekha",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "R.M.K College of Engg and Tech,Dept of CSE"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "family": "S.Deepa",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "R.M.D Engineering College,Dept of CSBS,601206"
+              }
+            ],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              24
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/11459446/11459447/11459772.pdf?arnumber=11459772",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "kind": "metadata_verification",
+    "provider": "Crossref",
+    "query": "Past present and future of decision support technology",
+    "url": "https://api.crossref.org/works?rows=2&query.title=Past%20present%20and%20future%20of%20decision%20support%20technology",
+    "status": "success",
+    "raw_file": "shim-crossref.json",
+    "matched_DOI": "10.1016/s0167-9236(01)00139-7"
+  }
+]
